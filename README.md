@@ -1,2 +1,2 @@
-# PySide2-X-Yelp
-Yelp dataset local GUI tool made with PySide2
+# PyQt5-X-Yelp
+Yelp dataset local GUI tool made with PyQt5
