@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/YelpxPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/YelpxPython.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testPyqt5.py" beforeDir="false" afterPath="$PROJECT_DIR$/testPyqt5.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +37,8 @@
       <file leaf-file-name="testPyqt5.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testPyqt5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="120">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -217,9 +214,9 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" x="0" y="0" width="303" height="678" id="Documentation" side_tool="true" weight="0.329927" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3298153" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3298153" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Python Console" visible="true" weight="0.3298153" />
+      <window_info anchor="bottom" id="Python Console" weight="0.3298153" />
       <window_info anchor="bottom" id="Terminal" weight="0.3298153" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2109489" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -260,8 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testPyqt5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="120">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
