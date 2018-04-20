@@ -12,10 +12,11 @@
 
 
 
-<del> 
-## pyuic
+
+### pyuic
 - load ui and convert to python with pyqt5
 
+<del> 
 qmake "INCLUDEPATH+=/usr/local/Cellar/mysql/5.7.21/include" "LIBS+=-L/usr/local/Cellar/mysql/5.7.21/lib -lmysqlclient_r" mysql.pro
 
 /usr/local/Cellar/mysql/5.7.21/lib
