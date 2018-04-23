@@ -154,5 +154,22 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pb_DBserver</sender>
+   <signal>clicked()</signal>
+   <receiver>MasterGUI</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>391</x>
+     <y>371</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

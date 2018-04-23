@@ -7,6 +7,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit
 
 
 class Ui_MasterGUI(object):
@@ -102,15 +105,37 @@ class Ui_MasterGUI(object):
 
         self.retranslateUi(MasterGUI)
         self.overallTabs.setCurrentIndex(0)
+        # self.pb_DBserver.clicked.connect(MasterGUI.close)
+
+        #############################################
+        self.pb_DBserver.clicked.connect(self.get_UserName)
+
+
+
+        #############################################
+
         QtCore.QMetaObject.connectSlotsByName(MasterGUI)
+
+    def get_UserName(self):
+        userName, ok = QInputDialog.getText(MasterGUI, "Input User Name", "User Name:", QLineEdit.Normal, "")
+
+        if ok and userName != '':
+            #print(userName)
+
+        passWord, ok = QInputDialog.getText(MasterGUI, "Input Password", "Password:", QLineEdit.Normal, "")
+
+        if ok and passWord != '':
+            #print(passWord)
+
+
+
 
     def retranslateUi(self, MasterGUI):
         _translate = QtCore.QCoreApplication.translate
         MasterGUI.setWindowTitle(_translate("MasterGUI", "MasterGUI"))
         self.pb_DBserver.setText(_translate("MasterGUI", "DB Server Usr/PW"))
         self.pb_searchUser.setText(_translate("MasterGUI", "Search"))
-        self.label_User.setText(_translate("MasterGUI",
-                                           "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
+        self.label_User.setText(_translate("MasterGUI", "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_User), _translate("MasterGUI", "User"))
         self.pb_searchBusiness.setText(_translate("MasterGUI", "Search"))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Business), _translate("MasterGUI", "Business"))
@@ -118,10 +143,10 @@ class Ui_MasterGUI(object):
 
 if __name__ == "__main__":
     import sys
-
     app = QtWidgets.QApplication(sys.argv)
     MasterGUI = QtWidgets.QMainWindow()
     ui = Ui_MasterGUI()
     ui.setupUi(MasterGUI)
     MasterGUI.show()
     sys.exit(app.exec_())
+
