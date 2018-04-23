@@ -37,33 +37,15 @@
       </property>
       <widget class="QWidget" name="tab_User">
        <attribute name="title">
-        <string>Grading</string>
+        <string>User</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="1">
-         <layout class="QGridLayout" name="gridLayoutGradingView" columnstretch="0,0,0,0">
-          <item row="1" column="0" rowspan="2" colspan="2">
-           <widget class="QPushButton" name="showPathPushBotton">
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>Connect</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0" colspan="2">
-           <widget class="QPushButton" name="specifyPath">
+         <layout class="QGridLayout" name="gridLayout_User" columnstretch="0,0,0,0">
+          <item row="0" column="0" rowspan="3" colspan="2">
+           <widget class="QPushButton" name="pb_DBserver">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -75,7 +57,7 @@
              </size>
             </property>
             <property name="text">
-             <string>DB Server</string>
+             <string>DB Server Usr/PW</string>
             </property>
             <property name="autoDefault">
              <bool>false</bool>
@@ -89,55 +71,51 @@
            </widget>
           </item>
           <item row="1" column="3" rowspan="2">
-           <widget class="QPushButton" name="searchPushButton">
+           <widget class="QPushButton" name="pb_searchUser">
             <property name="text">
              <string>Search</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="2" colspan="2" alignment="Qt::AlignHCenter">
-           <widget class="QLabel" name="label_JavaViewer">
+          <item row="1" column="2" rowspan="2">
+           <widget class="QLineEdit" name="lineEdit_User"/>
+          </item>
+          <item row="0" column="2" colspan="2">
+           <widget class="QLabel" name="label_User">
             <property name="text">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;User Search&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
-           </widget>
-          </item>
-          <item row="1" column="2" rowspan="2">
-           <widget class="QLineEdit" name="searchBoxLineEdit"/>
-          </item>
-          <item row="3" column="0" colspan="4">
-           <widget class="QTextEdit" name="javaViewer">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
             </property>
            </widget>
           </item>
          </layout>
         </item>
+        <item row="1" column="1">
+         <widget class="QTableView" name="tableView_User"/>
+        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="tab_Business">
        <attribute name="title">
-        <string>Edit DB</string>
+        <string>Business</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_7">
         <item row="0" column="0">
-         <layout class="QGridLayout" name="gridLayout_6">
+         <layout class="QGridLayout" name="gridLayout_Business">
           <item row="1" column="0" colspan="2">
-           <widget class="QTableView" name="editableTableView"/>
+           <widget class="QTableView" name="tableView_Business"/>
           </item>
           <item row="0" column="1">
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="pb_searchBusiness">
             <property name="text">
              <string>Search</string>
             </property>
            </widget>
           </item>
           <item row="0" column="0">
-           <widget class="QLineEdit" name="lineEdit"/>
+           <widget class="QLineEdit" name="lineEdit_businessInput"/>
           </item>
          </layout>
         </item>

@@ -16,6 +16,7 @@
 ### pyuic
 - load ui and convert to python with pyqt5
 - pyuic5 -x some.ui -o some.py
+- pyuic5 -x mastergui.ui -o mastergui.py && python3 mastergui.py 
 
 <del> 
 qmake "INCLUDEPATH+=/usr/local/Cellar/mysql/5.7.21/include" "LIBS+=-L/usr/local/Cellar/mysql/5.7.21/lib -lmysqlclient_r" mysql.pro
