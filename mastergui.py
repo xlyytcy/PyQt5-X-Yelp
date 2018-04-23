@@ -118,13 +118,13 @@ class Ui_MasterGUI(object):
 
         # Adding DB connection
 
-        self.pb_DBserver.clicked.connect(self.get_UserName)
+        self.pb_DBserver.clicked.connect(self.connectDB)
 
         #############################################
 
         QtCore.QMetaObject.connectSlotsByName(MasterGUI)
 
-    def get_UserName(self):
+    def connectDB(self):
         userName, ok = QInputDialog.getText(MasterGUI, "Input User Name", "User Name:", QLineEdit.Normal, "")
 
         if ok and userName != '':
