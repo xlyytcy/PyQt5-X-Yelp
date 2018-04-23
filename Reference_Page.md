@@ -34,3 +34,9 @@ otool -L libqsqlmysql.dylib
 <del> Some new thoughts: PyQt5.sql to handle the MYSQL db </del> 
 
 Luckily Pyqt5 connection issue is solved, how painful it was setting up simylink stuff.
+
+
+- https://pythonprogramminglanguage.com/pyqt5-message-box/
+- https://www.tutorialspoint.com/pyqt/pyqt_qinputdialog_widget.htm
+- https://pythonspot.com/pyqt5-buttons/
+- http://pythonthusiast.pythonblogs.com/230_pythonthusiast/archive/1358_developing_cross_platform_application_using_qt_pyqt_and_pyside__gui_application_development-part_5_of_5.html
