@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Reference_Page.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reference_Page.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mastergui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mastergui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,9 +40,10 @@
       <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mastergui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="150">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding>
-                <element signature="e#274#6612#0" />
+                <element signature="e#5410#6158#0" />
               </folding>
             </state>
           </provider>
@@ -62,6 +61,7 @@
         <option value="$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb" />
         <option value="$PROJECT_DIR$/mainwindow.py" />
         <option value="$PROJECT_DIR$/Reference_Page.md" />
+        <option value="$PROJECT_DIR$/mastergui.py" />
       </list>
     </option>
   </component>
@@ -217,6 +217,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="22" width="1412" height="878" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298153" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -247,6 +248,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb">
@@ -298,9 +304,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mastergui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="150">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
           <folding>
-            <element signature="e#274#6612#0" />
+            <element signature="e#5410#6158#0" />
           </folding>
         </state>
       </provider>

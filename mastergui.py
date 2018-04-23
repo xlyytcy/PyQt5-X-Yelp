@@ -8,6 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_MasterGUI(object):
     def setupUi(self, MasterGUI):
         MasterGUI.setObjectName("MasterGUI")
@@ -108,7 +109,8 @@ class Ui_MasterGUI(object):
         MasterGUI.setWindowTitle(_translate("MasterGUI", "MasterGUI"))
         self.pb_DBserver.setText(_translate("MasterGUI", "DB Server Usr/PW"))
         self.pb_searchUser.setText(_translate("MasterGUI", "Search"))
-        self.label_User.setText(_translate("MasterGUI", "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
+        self.label_User.setText(_translate("MasterGUI",
+                                           "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_User), _translate("MasterGUI", "User"))
         self.pb_searchBusiness.setText(_translate("MasterGUI", "Search"))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Business), _translate("MasterGUI", "Business"))
@@ -116,10 +118,10 @@ class Ui_MasterGUI(object):
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     MasterGUI = QtWidgets.QMainWindow()
     ui = Ui_MasterGUI()
     ui.setupUi(MasterGUI)
     MasterGUI.show()
     sys.exit(app.exec_())
-
