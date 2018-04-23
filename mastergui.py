@@ -10,7 +10,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtSql import *
-from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit
+from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QMessageBox
 
 # Global Variable
 db = QSqlDatabase.addDatabase('QMYSQL')
@@ -125,7 +125,7 @@ class Ui_MasterGUI(object):
         QtCore.QMetaObject.connectSlotsByName(MasterGUI)
 
     def connectDB(self):
-        userName, ok = QInputDialog.getText(MasterGUI, "Input User Name", "User Name:", QLineEdit.Normal, "")
+        userName, ok = QInputDialog.getText(MasterGUI, "Input User Name", "User Name:", QLineEdit.Password)
 
         if ok and userName != '':
             # print(userName)
@@ -137,6 +137,13 @@ class Ui_MasterGUI(object):
             # print(passWord)
             db.setPassword(passWord)
             print(db.open())
+            if db.open() == True:
+                self.printDBstatus()
+
+    def printDBstatus(self):
+        QMessageBox.about(MasterGUI, "DB Status", "DB Connected!")
+
+
 
     def retranslateUi(self, MasterGUI):
         _translate = QtCore.QCoreApplication.translate
