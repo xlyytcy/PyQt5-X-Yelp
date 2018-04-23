@@ -121,10 +121,25 @@ class Ui_MasterGUI(object):
         self.pb_DBserver.clicked.connect(self.connectDB)
 
         #############################################
+        # Custom Functions
 
         QtCore.QMetaObject.connectSlotsByName(MasterGUI)
 
-    def connectDB(self):
+        #############################################
+
+
+    def retranslateUi(self, MasterGUI):
+        _translate = QtCore.QCoreApplication.translate
+        MasterGUI.setWindowTitle(_translate("MasterGUI", "MasterGUI"))
+        self.pb_DBserver.setText(_translate("MasterGUI", "DB Server Usr/PW"))
+        self.pb_searchUser.setText(_translate("MasterGUI", "Search"))
+        self.label_User.setText(_translate("MasterGUI",
+                                           "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
+        self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_User), _translate("MasterGUI", "User"))
+        self.pb_searchBusiness.setText(_translate("MasterGUI", "Search"))
+        self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Business), _translate("MasterGUI", "Business"))
+
+   def connectDB(self):
         userName, ok = QInputDialog.getText(MasterGUI, "Input User Name", "User Name:", QLineEdit.Password)
 
         if ok and userName != '':
@@ -142,20 +157,6 @@ class Ui_MasterGUI(object):
 
     def printDBstatus(self):
         QMessageBox.about(MasterGUI, "DB Status", "DB Connected!")
-
-
-
-    def retranslateUi(self, MasterGUI):
-        _translate = QtCore.QCoreApplication.translate
-        MasterGUI.setWindowTitle(_translate("MasterGUI", "MasterGUI"))
-        self.pb_DBserver.setText(_translate("MasterGUI", "DB Server Usr/PW"))
-        self.pb_searchUser.setText(_translate("MasterGUI", "Search"))
-        self.label_User.setText(_translate("MasterGUI",
-                                           "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
-        self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_User), _translate("MasterGUI", "User"))
-        self.pb_searchBusiness.setText(_translate("MasterGUI", "Search"))
-        self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Business), _translate("MasterGUI", "Business"))
-
 
 if __name__ == "__main__":
     import sys
