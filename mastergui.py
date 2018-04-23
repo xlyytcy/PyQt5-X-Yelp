@@ -121,11 +121,8 @@ class Ui_MasterGUI(object):
         self.pb_DBserver.clicked.connect(self.connectDB)
 
         #############################################
-        # Custom Functions
 
         QtCore.QMetaObject.connectSlotsByName(MasterGUI)
-
-        #############################################
 
 
     def retranslateUi(self, MasterGUI):
@@ -139,7 +136,8 @@ class Ui_MasterGUI(object):
         self.pb_searchBusiness.setText(_translate("MasterGUI", "Search"))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Business), _translate("MasterGUI", "Business"))
 
-   def connectDB(self):
+
+    def connectDB(self):
         userName, ok = QInputDialog.getText(MasterGUI, "Input User Name", "User Name:", QLineEdit.Password)
 
         if ok and userName != '':
@@ -157,6 +155,8 @@ class Ui_MasterGUI(object):
 
     def printDBstatus(self):
         QMessageBox.about(MasterGUI, "DB Status", "DB Connected!")
+
+
 
 if __name__ == "__main__":
     import sys
