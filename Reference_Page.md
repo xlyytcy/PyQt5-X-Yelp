@@ -19,23 +19,23 @@
 - pyuic5 -x mastergui.ui -o mastergui.py && python3 mastergui.py 
 
 <del> 
-qmake "INCLUDEPATH+=/usr/local/Cellar/mysql/5.7.21/include" "LIBS+=-L/usr/local/Cellar/mysql/5.7.21/lib -lmysqlclient_r" mysql.pro
 
-/usr/local/Cellar/mysql/5.7.21/lib
+    qmake "INCLUDEPATH+=/usr/local/Cellar/mysql/5.7.21/include" "LIBS+=-L/usr/local/Cellar/mysql/5.7.21/lib -lmysqlclient_r" mysql.pro
 
-otool -L libqsqlmysql.dylib
+    /usr/local/Cellar/mysql/5.7.21/lib
 
+    otool -L libqsqlmysql.dylib
 
 
 </del>
 
 
+<del> Some new thoughts: PyQt5.sql to handle the MYSQL db </del>
 
-<del> Some new thoughts: PyQt5.sql to handle the MYSQL db </del> 
+     
+<br> <br>
 
-Luckily Pyqt5 connection issue is solved, how painful it was setting up simylink stuff.
-
-
+PtQt5 Reference Websites
 - https://pythonprogramminglanguage.com/pyqt5-message-box/
 - https://www.tutorialspoint.com/pyqt/pyqt_qinputdialog_widget.htm
 - https://pythonspot.com/pyqt5-buttons/
