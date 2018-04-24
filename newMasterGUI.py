@@ -58,7 +58,7 @@ class Ui_MasterGUI(object):
         self.gridLayout_User.addWidget(self.label_User, 0, 2, 1, 2)
         self.gridLayout_3.addLayout(self.gridLayout_User, 0, 1, 1, 1)
         self.tableView_User = QtWidgets.QTableView(self.tab_User)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.MinimumExpanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.tableView_User.sizePolicy().hasHeightForWidth())

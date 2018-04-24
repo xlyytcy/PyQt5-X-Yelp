@@ -43,5 +43,9 @@ PtQt5 Reference Websites
 - https://stackoverflow.com/questions/42415692/pyqt5-how-to-make-pushbutton-and-lineedit-to-connect-and-calculate-in-pushbutton
 - http://pyqt.sourceforge.net/Docs/PyQt4/qsqlquery.html#exec-2
 - http://doc.qt.io/qt-5/qsqlquery.html#approaches-to-binding-values
+- https://www.ntu.edu.sg/home/ehchua/programming/sql/MySQL_Beginner.html
+
+Non-technicle Weblinks
+- https://www.theverge.com/2017/8/31/16232180/ai-fake-reviews-yelp-amazon
 
 

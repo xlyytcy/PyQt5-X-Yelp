@@ -18,6 +18,7 @@ db = QSqlDatabase.addDatabase('QMYSQL')
 db.setHostName('yelpdb.clzycvghm6ps.us-east-2.rds.amazonaws.com')
 db.setDatabaseName('yelp_db')
 userIDtoSearch = ''
+businessIDtoSearch = ''
 
 
 #############################################
@@ -73,7 +74,7 @@ class Ui_MasterGUI(object):
         self.gridLayout_User.addWidget(self.label_User, 0, 2, 1, 2)
         self.gridLayout_3.addLayout(self.gridLayout_User, 0, 1, 1, 1)
         self.tableView_User = QtWidgets.QTableView(self.tab_User)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.MinimumExpanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.tableView_User.sizePolicy().hasHeightForWidth())
@@ -130,7 +131,7 @@ class Ui_MasterGUI(object):
         self.pb_DBserver.clicked.connect(self.connectDB)
         self.pb_searchUser.clicked.connect(self.displayUsers)
         self.pb_searchUser.clicked.connect(self.displayUsersAllReviews)
-
+        self.pb_searchBusiness.clicked.connect(self.displayBusinessAllReviews)
 
         #############################################
 
@@ -160,7 +161,7 @@ class Ui_MasterGUI(object):
         if ok and passWord != '':
             # print(passWord)
             db.setPassword(passWord)
-            print(db.open())
+            # print(db.open())
 
             if db.open() == True:  # Essential to have DB connected
                 self.printDBstatusOK()
@@ -187,7 +188,7 @@ class Ui_MasterGUI(object):
         tablemodel = QSqlQueryModel()
         tablemodel.setQuery(queryUser)
 
-        #print(userIDtoSearch)
+        # print(userIDtoSearch)
 
         userTableView.setModel(tablemodel)
         print(tablemodel.lastError().text())
@@ -199,7 +200,7 @@ class Ui_MasterGUI(object):
         userIDtoSearch = str(self.lineEdit_User.text())  # assure this is a string instead of QString
 
         # QSqlQuery
-        queryUser = QSqlQuery() #---1lKK3aKOuomHnwAkAow
+        queryUser = QSqlQuery()  # ---1lKK3aKOuomHnwAkAow
         queryUser.prepare(" SELECT * FROM review WHERE user_id = :userIDtoSearch ORDER BY date ASC ")
         queryUser.bindValue(":userIDtoSearch", userIDtoSearch)
         queryUser.exec_()
@@ -208,11 +209,32 @@ class Ui_MasterGUI(object):
         tablemodel = QSqlQueryModel()
         tablemodel.setQuery(queryUser)
 
-        #print(userIDtoSearch)
+        # print(userIDtoSearch)
 
         userReviewTableView.setModel(tablemodel)
         print(tablemodel.lastError().text())
         userReviewTableView.show()
+
+    def displayBusinessAllReviews(self):
+
+        businessTableView = self.tableView_Business
+        businessIDtoSearch = str(self.lineEdit_businessInput.text())  # assure this is a string instead of QString
+
+        # QSqlQuery
+        queryUser = QSqlQuery()  # ---1lKK3aKOuomHnwAkAow
+        queryUser.prepare(" SELECT * FROM review WHERE business_id = :businessIDtoSearch ORDER BY date ASC ")
+        queryUser.bindValue(":businessIDtoSearch", businessIDtoSearch)
+        queryUser.exec_()
+
+        # QSqlQueryModel
+        tablemodel = QSqlQueryModel()
+        tablemodel.setQuery(queryUser)
+
+        # print(userIDtoSearch)
+
+        businessTableView.setModel(tablemodel)
+        print(tablemodel.lastError().text())
+        businessTableView.show()
 
 
 if __name__ == "__main__":
