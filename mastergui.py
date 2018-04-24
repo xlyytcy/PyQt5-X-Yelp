@@ -12,11 +12,12 @@ from PyQt5.QtGui import *
 from PyQt5.QtSql import *
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QMessageBox
 
+#############################################
 # Global Variable
 db = QSqlDatabase.addDatabase('QMYSQL')
 db.setHostName('yelpdb.clzycvghm6ps.us-east-2.rds.amazonaws.com')
 db.setDatabaseName('yelp_db')
-
+#############################################
 
 class Ui_MasterGUI(object):
 
