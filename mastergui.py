@@ -151,10 +151,15 @@ class Ui_MasterGUI(object):
             db.setPassword(passWord)
             print(db.open())
             if db.open() == True:
-                self.printDBstatus()
+                self.printDBstatusOK()
+            else:
+                self.printDBstatusNO()
 
-    def printDBstatus(self):
+    def printDBstatusOK(self):
         QMessageBox.about(MasterGUI, "DB Status", "DB Connected!")
+
+    def printDBstatusNO(self):
+        QMessageBox.about(MasterGUI, "DB Status", "DB connection failed!")
 
 
 
