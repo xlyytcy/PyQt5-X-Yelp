@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mastergui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mastergui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,28 +31,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mastergui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="247" column="25" selection-start-line="247" selection-start-column="25" selection-end-line="247" selection-end-column="25" />
+            <state relative-caret-position="-219">
+              <caret line="168" column="38" lean-forward="true" selection-start-line="168" selection-start-column="38" selection-end-line="168" selection-end-column="38" />
               <folding>
                 <element signature="e#198#240#0" expanded="true" />
-                <element signature="e#773#6996#0" />
-                <element signature="e#6338#7129#0" />
                 <element signature="e#7165#7734#0" />
                 <element signature="e#8212#9037#0" />
                 <element signature="e#9293#9983#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testSemi.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -80,6 +67,8 @@
       <find>displayUsers</find>
       <find>true</find>
       <find>displayBusinessAllReviews</find>
+      <find>mastergui</find>
+      <find>&quot;MasterGUI&quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,9 +84,9 @@
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/testPyqt.py" />
         <option value="$PROJECT_DIR$/Reference_Page.md" />
-        <option value="$PROJECT_DIR$/mastergui.py" />
         <option value="$PROJECT_DIR$/Yelp_Dataset_License/testFile.py" />
         <option value="$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py" />
+        <option value="$PROJECT_DIR$/mastergui.py" />
       </list>
     </option>
   </component>
@@ -329,8 +318,6 @@
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#773#6996#0" />
-            <element signature="e#6338#7129#0" />
             <element signature="e#7165#7734#0" />
             <element signature="e#8212#9037#0" />
             <element signature="e#9293#9983#0" />
@@ -398,25 +385,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mastergui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="247" column="25" selection-start-line="247" selection-start-column="25" selection-end-line="247" selection-end-column="25" />
+        <state relative-caret-position="-219">
+          <caret line="168" column="38" lean-forward="true" selection-start-line="168" selection-start-column="38" selection-end-line="168" selection-end-column="38" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#773#6996#0" />
-            <element signature="e#6338#7129#0" />
             <element signature="e#7165#7734#0" />
             <element signature="e#8212#9037#0" />
             <element signature="e#9293#9983#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>

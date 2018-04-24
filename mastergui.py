@@ -139,7 +139,7 @@ class Ui_MasterGUI(object):
 
     def retranslateUi(self, MasterGUI):
         _translate = QtCore.QCoreApplication.translate
-        MasterGUI.setWindowTitle(_translate("MasterGUI", "MasterGUI"))
+        MasterGUI.setWindowTitle(_translate("MasterGUI", "YelpDBParser"))
         self.pb_DBserver.setText(_translate("MasterGUI", "DB Server Usr/PW"))
         self.pb_searchUser.setText(_translate("MasterGUI", "Search"))
         self.label_User.setText(_translate("MasterGUI",
