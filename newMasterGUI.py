@@ -7,23 +7,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtSql import *
-from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QMessageBox
-
-#############################################
-# Global Variable
-db = QSqlDatabase.addDatabase('QMYSQL')
-db.setHostName('yelpdb.clzycvghm6ps.us-east-2.rds.amazonaws.com')
-db.setDatabaseName('yelp_db')
-userIDtoSearch = ''
-
-
-#############################################
 
 class Ui_MasterGUI(object):
-
     def setupUi(self, MasterGUI):
         MasterGUI.setObjectName("MasterGUI")
         MasterGUI.resize(784, 743)
@@ -80,10 +65,8 @@ class Ui_MasterGUI(object):
         self.tableView_User.setSizePolicy(sizePolicy)
         self.tableView_User.setObjectName("tableView_User")
         self.gridLayout_3.addWidget(self.tableView_User, 1, 1, 1, 1)
-        ###################### Added another tableView
         self.tableView_User_AllReviews = QtWidgets.QTableView(self.tab_User)
         self.tableView_User_AllReviews.setObjectName("tableView_User_AllReviews")
-        ######################
         self.gridLayout_3.addWidget(self.tableView_User_AllReviews, 2, 1, 1, 1)
         self.overallTabs.addTab(self.tab_User, "")
         self.tab_Business = QtWidgets.QWidget()
@@ -121,17 +104,7 @@ class Ui_MasterGUI(object):
 
         self.retranslateUi(MasterGUI)
         self.overallTabs.setCurrentIndex(0)
-        # self.pb_DBserver.clicked.connect(MasterGUI.close)
-
-        #############################################
-        ## Signal and Slots
-
-        # Adding DB connection
-        self.pb_DBserver.clicked.connect(self.connectDB)
-        self.pb_searchUser.clicked.connect(self.displayUsers)
-
-        #############################################
-
+        self.pb_DBserver.clicked.connect(MasterGUI.close)
         QtCore.QMetaObject.connectSlotsByName(MasterGUI)
 
     def retranslateUi(self, MasterGUI):
@@ -139,68 +112,18 @@ class Ui_MasterGUI(object):
         MasterGUI.setWindowTitle(_translate("MasterGUI", "MasterGUI"))
         self.pb_DBserver.setText(_translate("MasterGUI", "DB Server Usr/PW"))
         self.pb_searchUser.setText(_translate("MasterGUI", "Search"))
-        self.label_User.setText(_translate("MasterGUI",
-                                           "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
-
+        self.label_User.setText(_translate("MasterGUI", "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_User), _translate("MasterGUI", "User"))
         self.pb_searchBusiness.setText(_translate("MasterGUI", "Search"))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Business), _translate("MasterGUI", "Business"))
 
-    def connectDB(self):
-        userName, ok = QInputDialog.getText(MasterGUI, "Input User Name", "User Name:", QLineEdit.Password)
-
-        if ok and userName != '':
-            # print(userName)
-            db.setUserName(userName)
-
-        passWord, ok = QInputDialog.getText(MasterGUI, "Input Password", "Password:", QLineEdit.Password)
-
-        if ok and passWord != '':
-            # print(passWord)
-            db.setPassword(passWord)
-            print(db.open())
-
-            if db.open() == True:  # Essential to have DB connected
-                self.printDBstatusOK()
-            else:
-                self.printDBstatusNO()
-
-    def printDBstatusOK(self):
-        QMessageBox.about(MasterGUI, "DB Status", "DB Connected!")
-
-    def printDBstatusNO(self):
-        QMessageBox.about(MasterGUI, "DB Status", "DB connection failed!")
-
-    def displayUsers(self):
-        userTableView = self.tableView_User
-        userIDtoSearch = str(self.lineEdit_User.text())  # assure this is a string instead of QString
-
-        # QSqlQuery
-        queryUser = QSqlQuery()
-        queryUser.prepare(" SELECT * FROM user WHERE id = :userIDtoSearch ")
-        queryUser.bindValue(":userIDtoSearch", userIDtoSearch)
-        queryUser.exec_()
-
-        # QSqlQueryModel
-        tablemodel = QSqlQueryModel()
-        # if queryUser.exec('SELECT * FROM user WHERE id = :userIDtoSearch'):
-        tablemodel.setQuery(queryUser)
-
-        print(userIDtoSearch)
-        # tablemodel.setQuery('SELECT * FROM user WHERE id = userIDtoSearch', db)
-        # tablemodel.bindValue(":userIDtoSearch", userIDtoSearch)
-
-        userTableView.setModel(tablemodel)
-        print(tablemodel.lastError().text())
-        userTableView.show()
-
 
 if __name__ == "__main__":
     import sys
-
     app = QtWidgets.QApplication(sys.argv)
     MasterGUI = QtWidgets.QMainWindow()
     ui = Ui_MasterGUI()
     ui.setupUi(MasterGUI)
     MasterGUI.show()
     sys.exit(app.exec_())
+
