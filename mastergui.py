@@ -17,6 +17,8 @@ from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QMes
 db = QSqlDatabase.addDatabase('QMYSQL')
 db.setHostName('yelpdb.clzycvghm6ps.us-east-2.rds.amazonaws.com')
 db.setDatabaseName('yelp_db')
+userIDtoSearch = ''
+
 #############################################
 
 class Ui_MasterGUI(object):
@@ -116,10 +118,11 @@ class Ui_MasterGUI(object):
         # self.pb_DBserver.clicked.connect(MasterGUI.close)
 
         #############################################
+        ## Signal and Slots
 
         # Adding DB connection
-
         self.pb_DBserver.clicked.connect(self.connectDB)
+        self.pb_searchUser.clicked.connect(self.displayUsers)
 
         #############################################
 
@@ -151,7 +154,8 @@ class Ui_MasterGUI(object):
             # print(passWord)
             db.setPassword(passWord)
             print(db.open())
-            if db.open() == True:
+
+            if db.open() == True: #Essential to have DB connected
                 self.printDBstatusOK()
             else:
                 self.printDBstatusNO()
@@ -162,6 +166,28 @@ class Ui_MasterGUI(object):
     def printDBstatusNO(self):
         QMessageBox.about(MasterGUI, "DB Status", "DB connection failed!")
 
+    def displayUsers(self):
+        userTableView = self.tableView_User
+        userIDtoSearch = str(self.lineEdit_User.text()) #assure this is a string instead of QString
+
+        #QSqlQuery
+        queryUser = QSqlQuery()
+        queryUser.prepare(" SELECT * FROM user WHERE id = :userIDtoSearch ")
+        queryUser.bindValue(":userIDtoSearch", userIDtoSearch)
+        queryUser.exec_()
+
+        #QSqlQueryModel
+        tablemodel = QSqlQueryModel()
+        #if queryUser.exec('SELECT * FROM user WHERE id = :userIDtoSearch'):
+        tablemodel.setQuery(queryUser)
+
+        print(userIDtoSearch)
+        #tablemodel.setQuery('SELECT * FROM user WHERE id = userIDtoSearch', db)
+        #tablemodel.bindValue(":userIDtoSearch", userIDtoSearch)
+
+        userTableView.setModel(tablemodel)
+        print(tablemodel.lastError().text())
+        userTableView.show()
 
 
 if __name__ == "__main__":

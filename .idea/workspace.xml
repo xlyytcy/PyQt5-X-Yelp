@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Reference_Page.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reference_Page.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mastergui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/Reference_Page.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="540">
-                <caret line="36" selection-start-line="36" selection-end-line="36" />
+              <first_editor relative-caret-position="441">
+                <caret line="42" column="127" selection-start-line="42" selection-start-column="127" selection-end-line="42" selection-end-column="127" />
               </first_editor>
               <second_editor />
             </state>
@@ -40,8 +41,8 @@
       <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mastergui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+            <state relative-caret-position="254">
+              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
                 <element signature="e#198#240#0" expanded="true" />
               </folding>
@@ -62,6 +63,9 @@
     <findStrings>
       <find>resize</find>
       <find>pb_DBserver</find>
+      <find>searchUser</find>
+      <find>searhUser</find>
+      <find>userIDtoSearch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,10 +94,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="161" />
-    <option name="y" value="22" />
-    <option name="width" value="1198" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="244" />
+    <option name="y" value="44" />
+    <option name="width" value="1412" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectView">
@@ -240,7 +244,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="22" width="1412" height="878" extended-state="6" />
+    <frame x="244" y="44" width="1412" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298153" />
@@ -248,7 +252,7 @@
       <window_info anchor="right" x="0" y="0" width="303" height="678" id="Documentation" order="5" side_tool="true" weight="0.329927" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298153" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298153" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3298153" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26121372" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.11021898" />
@@ -342,8 +346,8 @@
     <entry file="file://$PROJECT_DIR$/Reference_Page.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="540">
-            <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <first_editor relative-caret-position="441">
+            <caret line="42" column="127" selection-start-line="42" selection-start-column="127" selection-end-line="42" selection-end-column="127" />
           </first_editor>
           <second_editor />
         </state>
@@ -351,8 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mastergui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <state relative-caret-position="254">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
           </folding>
