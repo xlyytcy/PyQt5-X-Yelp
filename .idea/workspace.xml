@@ -5,194 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Reference_Page.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reference_Page.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Private/CalendarUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Private/CalendarUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Private/StackView.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Private/StackView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Private/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Private/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/PyQt5/Qt/qml/QtTest/testlogger.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/PyQt5/Qt/qml/QtTest/testlogger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/base/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/base/js/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/base/js/namespace.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/base/js/namespace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/base/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/base/js/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/comment/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/comment/comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/display/autorefresh.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/display/autorefresh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/display/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/display/panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/display/placeholder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/display/placeholder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/display/rulers.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/display/rulers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/edit/closebrackets.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/edit/closebrackets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/edit/matchbrackets.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/edit/matchbrackets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/fold/indent-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/fold/indent-fold.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/hint/javascript-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/hint/javascript-hint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/hint/show-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/hint/show-hint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/hint/sql-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/hint/sql-hint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/lint/lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/lint/lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/merge/merge.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/merge/merge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/mode/simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/mode/simple.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/runmode/runmode-standalone.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/runmode/runmode-standalone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/runmode/runmode.node.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/runmode/runmode.node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/scroll/annotatescrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/scroll/annotatescrollbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/scroll/simplescrollbars.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/scroll/simplescrollbars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/search/jump-to-line.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/search/jump-to-line.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/search/match-highlighter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/search/match-highlighter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/search/searchcursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/search/searchcursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/selection/active-line.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/selection/active-line.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/tern/tern.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/tern/tern.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/wrap/hardwrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/wrap/hardwrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/keymap/sublime.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/keymap/sublime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/keymap/vim.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/keymap/vim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/lib/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/lib/codemirror.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/brainfuck/brainfuck.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/brainfuck/brainfuck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/clike/clike.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/clike/clike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/crystal/crystal.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/crystal/crystal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/css/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/css/css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/dart/dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/dart/dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/django/django.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/django/django.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/dylan/dylan.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/dylan/dylan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/erlang/erlang.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/erlang/erlang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/gfm/gfm.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/gfm/gfm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/haskell-literate/haskell-literate.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/haskell-literate/haskell-literate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/htmlmixed/htmlmixed.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/htmlmixed/htmlmixed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/idl/idl.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/idl/idl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/javascript/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/javascript/javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/jinja2/jinja2.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/jinja2/jinja2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/jsx/jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/jsx/jsx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/markdown/markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/markdown/markdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/mathematica/mathematica.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/mathematica/mathematica.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/mbox/mbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/mbox/mbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/meta.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/meta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/mllike/mllike.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/mllike/mllike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/mscgen/mscgen.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/mscgen/mscgen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/octave/octave.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/octave/octave.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/pegjs/pegjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/pegjs/pegjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/php/php.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/php/php.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/powershell/powershell.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/powershell/powershell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/protobuf/protobuf.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/protobuf/protobuf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/python/python.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/python/python.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/r/r.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/r/r.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/ruby/ruby.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/ruby/ruby.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/sas/sas.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/sas/sas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/shell/shell.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/shell/shell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/sql/sql.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/sql/sql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/swift/swift.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/swift/swift.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/textile/textile.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/textile/textile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/troff/troff.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/troff/troff.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/twig/twig.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/twig/twig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/vbscript/vbscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/vbscript/vbscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/webidl/webidl.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/webidl/webidl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/xml/xml.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/xml/xml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/xquery/xquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/xquery/xquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/yacas/yacas.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/yacas/yacas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/yaml-frontmatter/yaml-frontmatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/yaml-frontmatter/yaml-frontmatter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/yaml/yaml.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/yaml/yaml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/Display.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/Display.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/focus.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/focus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/gutters.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/gutters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/highlight_worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/highlight_worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/line_numbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/line_numbers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/mode_state.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/mode_state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/operations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/scroll_events.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/scroll_events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/scrollbars.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/scrollbars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/scrolling.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/scrolling.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/selection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/update_display.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/update_display.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/update_line.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/update_line.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/update_lines.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/update_lines.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/view_tracking.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/display/view_tracking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/CodeMirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/CodeMirror.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/commands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/deleteNearSelection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/deleteNearSelection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/drop_events.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/drop_events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/fromTextArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/fromTextArea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/global_events.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/global_events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/key_events.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/key_events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/legacy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/methods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/mouse_events.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/mouse_events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/edit/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/ContentEditableInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/ContentEditableInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/TextareaInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/TextareaInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/indent.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/indent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/keymap.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/keymap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/keynames.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/keynames.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/movement.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/input/movement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/highlight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/line_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/line_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/pos.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/pos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/saw_special_spans.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/saw_special_spans.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/spans.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/spans.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/utils_line.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/line/utils_line.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/measurement/position_measurement.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/measurement/position_measurement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/measurement/widgets.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/measurement/widgets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/Doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/Doc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/change_measurement.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/change_measurement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/changes.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/changes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/chunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/document_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/document_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/line_widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/line_widget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/mark_text.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/mark_text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/selection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/selection_updates.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/model/selection_updates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/modes.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/modes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/StringStream.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/StringStream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/bidi.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/bidi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/feature_detection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/feature_detection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/misc.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/misc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/operation_group.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/codemirror/src/util/operation_group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/es6-promise/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/es6-promise/promise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/jed/jed.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/jed/jed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/marked/lib/marked.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/marked/lib/marked.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/requirejs/require.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/requirejs/require.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/xterm.js/dist/xterm.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/components/xterm.js/dist/xterm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/edit/js/editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/edit/js/editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/edit/js/notificationarea.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/edit/js/notificationarea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/cell.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/cell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/celltoolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/celltoolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/codemirror-ipython.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/codemirror-ipython.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/codemirror-ipythongfm.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/codemirror-ipythongfm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/kernelselector.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/kernelselector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/menubar.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/menubar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/notebook.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/notebook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/notificationarea.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/notificationarea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/outputarea.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/outputarea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/searchandreplace.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/searchandreplace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/textcell.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/textcell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/notebook/js/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/services/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/services/contents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/services/kernels/kernel.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/services/kernels/kernel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/tree/js/notebooklist.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/static/tree/js/notebooklist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/templates/notebook.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/templates/notebook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/templates/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/templates/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/base/misc.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/base/misc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/attachments.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/attachments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/buffering.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/buffering.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/clipboard_multiselect.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/clipboard_multiselect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/display_id.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/display_id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/display_image.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/display_image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/execute_code.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/execute_code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/execute_selected_cells.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/execute_selected_cells.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/kernel_menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/kernel_menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/markdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/move_multiselection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/move_multiselection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/output.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/output.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/save.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/save.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/shutdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/shutdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/tags.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/notebook/tags.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/notebook/tests/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/terminado/uimod_embed.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/terminado/uimod_embed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/widgetsnbextension/static/extension.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/widgetsnbextension/static/extension.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mastergui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newMasterGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/newMasterGUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/share/jupyter/nbextensions/jupyter-js-widgets/extension.js" beforeDir="false" afterPath="$PROJECT_DIR$/share/jupyter/nbextensions/jupyter-js-widgets/extension.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testPyqt5.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mastergui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -218,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mastergui.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="397">
@@ -231,6 +46,15 @@
                 <element signature="e#8212#9037#0" />
                 <element signature="e#9293#9983#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testSemi.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -272,6 +96,8 @@
         <option value="$PROJECT_DIR$/testPyqt.py" />
         <option value="$PROJECT_DIR$/Reference_Page.md" />
         <option value="$PROJECT_DIR$/mastergui.py" />
+        <option value="$PROJECT_DIR$/Yelp_Dataset_License/testFile.py" />
+        <option value="$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py" />
       </list>
     </option>
   </component>
@@ -285,7 +111,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
+    <option name="x" value="94" />
     <option name="y" value="22" />
     <option name="width" value="1412" />
     <option name="height" value="878" />
@@ -317,6 +143,11 @@
               <item name="YelpxPython" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YelpxPython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YelpxPython" type="462c0819:PsiDirectoryNode" />
+              <item name="Yelp_Dataset_License" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -436,7 +267,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="22" width="1412" height="878" extended-state="0" />
+    <frame x="94" y="22" width="1412" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298153" />
@@ -557,6 +388,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/testFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mastergui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -569,6 +410,13 @@
             <element signature="e#8212#9037#0" />
             <element signature="e#9293#9983#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
