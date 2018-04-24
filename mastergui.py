@@ -129,6 +129,8 @@ class Ui_MasterGUI(object):
         # Adding DB connection
         self.pb_DBserver.clicked.connect(self.connectDB)
         self.pb_searchUser.clicked.connect(self.displayUsers)
+        self.pb_searchUser.clicked.connect(self.displayUsersAllReviews)
+
 
         #############################################
 
@@ -166,10 +168,10 @@ class Ui_MasterGUI(object):
                 self.printDBstatusNO()
 
     def printDBstatusOK(self):
-        QMessageBox.about(MasterGUI, "DB Status", "DB Connected!")
+        QMessageBox.about(MasterGUI, "DB Status", "Remote DB Connected!")
 
     def printDBstatusNO(self):
-        QMessageBox.about(MasterGUI, "DB Status", "DB connection failed!")
+        QMessageBox.about(MasterGUI, "DB Status", "Remote DB connection failed!")
 
     def displayUsers(self):
         userTableView = self.tableView_User
@@ -183,16 +185,34 @@ class Ui_MasterGUI(object):
 
         # QSqlQueryModel
         tablemodel = QSqlQueryModel()
-        # if queryUser.exec('SELECT * FROM user WHERE id = :userIDtoSearch'):
         tablemodel.setQuery(queryUser)
 
-        print(userIDtoSearch)
-        # tablemodel.setQuery('SELECT * FROM user WHERE id = userIDtoSearch', db)
-        # tablemodel.bindValue(":userIDtoSearch", userIDtoSearch)
+        #print(userIDtoSearch)
 
         userTableView.setModel(tablemodel)
         print(tablemodel.lastError().text())
         userTableView.show()
+
+    def displayUsersAllReviews(self):
+
+        userReviewTableView = self.tableView_User_AllReviews
+        userIDtoSearch = str(self.lineEdit_User.text())  # assure this is a string instead of QString
+
+        # QSqlQuery
+        queryUser = QSqlQuery() #---1lKK3aKOuomHnwAkAow
+        queryUser.prepare(" SELECT * FROM review WHERE user_id = :userIDtoSearch ORDER BY date ASC ")
+        queryUser.bindValue(":userIDtoSearch", userIDtoSearch)
+        queryUser.exec_()
+
+        # QSqlQueryModel
+        tablemodel = QSqlQueryModel()
+        tablemodel.setQuery(queryUser)
+
+        #print(userIDtoSearch)
+
+        userReviewTableView.setModel(tablemodel)
+        print(tablemodel.lastError().text())
+        userReviewTableView.show()
 
 
 if __name__ == "__main__":

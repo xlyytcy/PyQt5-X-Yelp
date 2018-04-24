@@ -42,4 +42,6 @@ PtQt5 Reference Websites
 - http://pythonthusiast.pythonblogs.com/230_pythonthusiast/archive/1358_developing_cross_platform_application_using_qt_pyqt_and_pyside__gui_application_development-part_5_of_5.html
 - https://stackoverflow.com/questions/42415692/pyqt5-how-to-make-pushbutton-and-lineedit-to-connect-and-calculate-in-pushbutton
 - http://pyqt.sourceforge.net/Docs/PyQt4/qsqlquery.html#exec-2
+- http://doc.qt.io/qt-5/qsqlquery.html#approaches-to-binding-values
+
 
