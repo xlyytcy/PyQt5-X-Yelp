@@ -20,7 +20,8 @@ db.setDatabaseName('yelp_db')
 userIDtoSearch = ''
 businessIDtoSearch = ''
 userAllReviewCount = 0
-businessReviewCount = 0
+businessReviewCountValid = 0
+businessReviewCountAll = 0
 
 
 #############################################
@@ -304,9 +305,17 @@ class Ui_MasterGUI(object):
         queryUser.bindValue(":businessIDtoSearch", businessIDtoSearch)
         queryUser.exec_()
 
+        queryCountAll = QSqlQuery()
+        queryCountAll.prepare(" SELECT * FROM business WHERE id = :businessIDtoSearch ORDER BY date ASC ")
+        queryCountAll.bindValue(":businessIDtoSearch", businessIDtoSearch)
+        queryCountAll.exec_()
+
         # QSqlQueryModel
         tablemodel = QSqlQueryModel()
         tablemodel.setQuery(queryUser)
+
+        businessTableModel = QSqlQueryModel()
+        businessTableModel.setQuery(queryCountAll)
 
         # print(userIDtoSearch)
 
@@ -315,16 +324,27 @@ class Ui_MasterGUI(object):
 
         businessTableView.setModel(tablemodel)
         print(tablemodel.lastError().text())
+
+        ##############################
+        global businessReviewCountAll
+        index = QModelIndex()
+        index = tablemodel.index(0, 10, QModelIndex())
+        businessReviewCountAll = tablemodel.data(index)
+
+        global businessReviewCountValid
+        businessReviewCountValid = tablemodel.rowCount()
+        # print(userAllReviewCount)
+        ##############################
+
         businessTableView.show()
+        self.calculateBusinessFakePercent()
 
     def calculateUserFakePercent(self):
-
-        #print(userAllReviewCount) #test global variable working status
-        percentageFake = str( userAllReviewCount / userValidReviewCount * 100)
-        self.label_fakePercentageVar.setText(percentageFake)
+        # print(userAllReviewCount) #test global variable working status
+        self.label_fakePercentageVar.setText(str(userAllReviewCount / userValidReviewCount * 100))
 
     def calculateBusinessFakePercent(self):
-        print('nonsense')
+        self.label_BusinessPercentage.setText(str(businessReviewCountValid / businessReviewCountAll * 100))
 
 
 if __name__ == "__main__":
