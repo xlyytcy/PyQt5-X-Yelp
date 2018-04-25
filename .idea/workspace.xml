@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mastergui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,9 +35,10 @@
       <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mastergui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="330" column="38" selection-start-line="330" selection-start-column="38" selection-end-line="330" selection-end-column="38" />
+            <state relative-caret-position="205">
+              <caret line="335" column="25" selection-start-line="335" selection-start-column="8" selection-end-line="335" selection-end-column="25" />
               <folding>
+                <element signature="e#198#240#0" expanded="true" />
                 <element signature="e#10998#11604#0" />
               </folding>
             </state>
@@ -105,7 +107,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="191" />
+    <option name="x" value="64" />
     <option name="y" value="22" />
     <option name="width" value="1412" />
     <option name="height" value="878" />
@@ -282,7 +284,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="191" y="22" width="1412" height="878" extended-state="0" />
+    <frame x="64" y="22" width="1412" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298153" />
@@ -343,6 +345,7 @@
         <state relative-caret-position="1845">
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
+            <element signature="e#198#240#0" expanded="true" />
             <element signature="e#10998#11604#0" />
           </folding>
         </state>
@@ -417,9 +420,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mastergui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="330" column="38" selection-start-line="330" selection-start-column="38" selection-end-line="330" selection-end-column="38" />
+        <state relative-caret-position="205">
+          <caret line="335" column="25" selection-start-line="335" selection-start-column="8" selection-end-line="335" selection-end-column="25" />
           <folding>
+            <element signature="e#198#240#0" expanded="true" />
             <element signature="e#10998#11604#0" />
           </folding>
         </state>

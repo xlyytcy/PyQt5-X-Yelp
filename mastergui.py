@@ -211,7 +211,7 @@ class Ui_MasterGUI(object):
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_User), _translate("MasterGUI", "User"))
         self.pb_searchBusiness.setText(_translate("MasterGUI", "             Search           "))
         self.label.setText(_translate("MasterGUI", "% Fake Review"))
-        self.label_BusinessPercentage.setText(_translate("MasterGUI", "TextLabel"))
+        self.label_BusinessPercentage.setText(_translate("MasterGUI", " "))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Business), _translate("MasterGUI", "Business"))
 
     def connectDB(self):
@@ -306,7 +306,7 @@ class Ui_MasterGUI(object):
         queryUser.exec_()
 
         queryCountAll = QSqlQuery()
-        queryCountAll.prepare(" SELECT * FROM business WHERE id = :businessIDtoSearch ORDER BY date ASC ")
+        queryCountAll.prepare(" SELECT * FROM business WHERE id LIKE :businessIDtoSearch ORDER BY date ASC ")
         queryCountAll.bindValue(":businessIDtoSearch", businessIDtoSearch)
         queryCountAll.exec_()
 
@@ -319,17 +319,14 @@ class Ui_MasterGUI(object):
 
         # print(userIDtoSearch)
 
-        global businessReviewCount
-        businessReviewCount = tablemodel.rowCount()
-
         businessTableView.setModel(tablemodel)
         print(tablemodel.lastError().text())
 
         ##############################
         global businessReviewCountAll
         index = QModelIndex()
-        index = tablemodel.index(0, 10, QModelIndex())
-        businessReviewCountAll = tablemodel.data(index)
+        index = businessTableModel.index(0, 10, QModelIndex())
+        businessReviewCountAll = businessTableModel.data(index)
 
         global businessReviewCountValid
         businessReviewCountValid = tablemodel.rowCount()
@@ -344,7 +341,9 @@ class Ui_MasterGUI(object):
         self.label_fakePercentageVar.setText(str(userAllReviewCount / userValidReviewCount * 100))
 
     def calculateBusinessFakePercent(self):
-        self.label_BusinessPercentage.setText(str(businessReviewCountValid / businessReviewCountAll * 100))
+        #self.label_BusinessPercentage.setText(str(businessReviewCountValid / businessReviewCountAll * 100))
+        print(businessReviewCountAll)
+        print(businessReviewCountValid)
 
 
 if __name__ == "__main__":
