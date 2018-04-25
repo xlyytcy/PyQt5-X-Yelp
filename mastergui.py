@@ -19,6 +19,8 @@ db.setHostName('yelpdb.clzycvghm6ps.us-east-2.rds.amazonaws.com')
 db.setDatabaseName('yelp_db')
 userIDtoSearch = ''
 businessIDtoSearch = ''
+userAllReviewCount = 0
+businessReviewCount = 0
 
 
 #############################################
@@ -156,16 +158,16 @@ class Ui_MasterGUI(object):
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.gridLayout_Business.addWidget(self.label, 1, 0, 1, 1)
-        self.label_2 = QtWidgets.QLabel(self.tab_Business)
+        self.label_BusinessPercentage = QtWidgets.QLabel(self.tab_Business)
         font = QtGui.QFont()
         font.setFamily("Helvetica Neue")
         font.setBold(True)
         font.setItalic(True)
         font.setWeight(75)
-        self.label_2.setFont(font)
-        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_2.setObjectName("label_2")
-        self.gridLayout_Business.addWidget(self.label_2, 1, 1, 1, 1)
+        self.label_BusinessPercentage.setFont(font)
+        self.label_BusinessPercentage.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_BusinessPercentage.setObjectName("label_BusinessPercentage")
+        self.gridLayout_Business.addWidget(self.label_BusinessPercentage, 1, 1, 1, 1)
         self.gridLayout_7.addLayout(self.gridLayout_Business, 0, 0, 1, 1)
         self.overallTabs.addTab(self.tab_Business, "")
         self.gridLayout_2.addWidget(self.overallTabs, 0, 0, 1, 1)
@@ -208,7 +210,7 @@ class Ui_MasterGUI(object):
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_User), _translate("MasterGUI", "User"))
         self.pb_searchBusiness.setText(_translate("MasterGUI", "             Search           "))
         self.label.setText(_translate("MasterGUI", "% Fake Review"))
-        self.label_2.setText(_translate("MasterGUI", "TextLabel"))
+        self.label_BusinessPercentage.setText(_translate("MasterGUI", "TextLabel"))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Business), _translate("MasterGUI", "Business"))
 
     def connectDB(self):
@@ -254,6 +256,13 @@ class Ui_MasterGUI(object):
 
         userTableView.setModel(tablemodel)
         print(tablemodel.lastError().text())
+
+        global userValidReviewCount
+        index = QModelIndex()
+        index = tablemodel.index(0, 2, QModelIndex())
+        userValidReviewCount = tablemodel.data(index)
+        # print(userValidReviewCount)
+
         userTableView.show()
 
     def displayUsersAllReviews(self):
@@ -273,9 +282,16 @@ class Ui_MasterGUI(object):
 
         # print(userIDtoSearch)
 
+        global userAllReviewCount
+        userAllReviewCount = tablemodel.rowCount()
+        # print(userAllReviewCount)
+
         userReviewTableView.setModel(tablemodel)
-        print(tablemodel.lastError().text())
+        print(tablemodel.lastError().text())  # Print sql query error
+
         userReviewTableView.show()
+
+        self.calculateUserFakePercent()
 
     def displayBusinessAllReviews(self):
 
@@ -294,16 +310,21 @@ class Ui_MasterGUI(object):
 
         # print(userIDtoSearch)
 
+        global businessReviewCount
+        businessReviewCount = tablemodel.rowCount()
+
         businessTableView.setModel(tablemodel)
         print(tablemodel.lastError().text())
         businessTableView.show()
 
     def calculateUserFakePercent(self):
-        print('nonsense')
+
+        #print(userAllReviewCount) #test global variable working status
+        percentageFake = str( userAllReviewCount / userValidReviewCount * 100)
+        self.label_fakePercentageVar.setText(percentageFake)
 
     def calculateBusinessFakePercent(self):
         print('nonsense')
-
 
 
 if __name__ == "__main__":
