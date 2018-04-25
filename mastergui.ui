@@ -24,7 +24,7 @@
        <enum>QTabWidget::Triangular</enum>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <property name="usesScrollButtons">
        <bool>true</bool>
@@ -40,6 +40,16 @@
         <string>User</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_3">
+        <item row="1" column="1">
+         <widget class="QTableView" name="tableView_User">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
         <item row="0" column="1">
          <layout class="QGridLayout" name="gridLayout_User" columnstretch="0,0,0,0">
           <item row="0" column="0" rowspan="3" colspan="2">
@@ -55,6 +65,11 @@
               <width>150</width>
               <height>16777215</height>
              </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Helvetica Neue</family>
+             </font>
             </property>
             <property name="text">
              <string>DB Server Usr/PW</string>
@@ -72,6 +87,11 @@
           </item>
           <item row="1" column="3" rowspan="2">
            <widget class="QPushButton" name="pb_searchUser">
+            <property name="font">
+             <font>
+              <family>Helvetica</family>
+             </font>
+            </property>
             <property name="text">
              <string>Search</string>
             </property>
@@ -82,6 +102,11 @@
           </item>
           <item row="0" column="2" colspan="2">
            <widget class="QLabel" name="label_User">
+            <property name="font">
+             <font>
+              <family>Helvetica Neue</family>
+             </font>
+            </property>
             <property name="text">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;User Search&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
@@ -92,18 +117,55 @@
           </item>
          </layout>
         </item>
-        <item row="1" column="1">
-         <widget class="QTableView" name="tableView_User">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-         </widget>
-        </item>
         <item row="2" column="1">
-         <widget class="QTableView" name="tableView_User_AllReviews"/>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_fakePercetangeFixed">
+            <property name="font">
+             <font>
+              <family>Helvetica Neue</family>
+              <weight>75</weight>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>%Fake Review</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::RichText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_fakePercentageVar">
+            <property name="font">
+             <font>
+              <family>Helvetica Neue</family>
+              <weight>75</weight>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" rowspan="2">
+           <widget class="QTableView" name="tableView_UserAllReviews">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </widget>
@@ -114,18 +176,59 @@
        <layout class="QGridLayout" name="gridLayout_7">
         <item row="0" column="0">
          <layout class="QGridLayout" name="gridLayout_Business">
-          <item row="1" column="0" colspan="2">
-           <widget class="QTableView" name="tableView_Business"/>
-          </item>
           <item row="0" column="1">
            <widget class="QPushButton" name="pb_searchBusiness">
+            <property name="font">
+             <font>
+              <family>Helvetica Neue</family>
+             </font>
+            </property>
             <property name="text">
-             <string>Search</string>
+             <string>             Search           </string>
             </property>
            </widget>
           </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QTableView" name="tableView_Business"/>
+          </item>
           <item row="0" column="0">
            <widget class="QLineEdit" name="lineEdit_businessInput"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <family>Helvetica Neue</family>
+              <weight>75</weight>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>% Fake Review</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <family>Helvetica Neue</family>
+              <weight>75</weight>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>

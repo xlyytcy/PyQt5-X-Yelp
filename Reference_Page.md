@@ -47,5 +47,8 @@ PtQt5 Reference Websites
 
 Non-technicle Weblinks
 - https://www.theverge.com/2017/8/31/16232180/ai-fake-reviews-yelp-amazon
+- https://fontpair.co (Google Material Design)
+- iconmonster.com
+
 
 
