@@ -20,6 +20,7 @@ db.setDatabaseName('yelp_db')
 userIDtoSearch = ''
 businessIDtoSearch = ''
 userAllReviewCount = 0
+userValidReviewCount = 0
 businessReviewCountValid = 0
 businessReviewCountAll = 0
 
@@ -228,7 +229,7 @@ class Ui_MasterGUI(object):
             db.setPassword(passWord)
             # print(db.open())
 
-            if db.open() == True:  # Essential to have DB connected
+            if db.open():  # Essential to have DB connected
                 self.printDBstatusOK()
             else:
                 self.printDBstatusNO()
@@ -245,7 +246,7 @@ class Ui_MasterGUI(object):
 
         # QSqlQuery
         queryUser = QSqlQuery()
-        queryUser.prepare(" SELECT * FROM user WHERE id = :userIDtoSearch ")
+        queryUser.prepare(" SELECT id, review_count, yelping_since FROM user WHERE id = :userIDtoSearch ")
         queryUser.bindValue(":userIDtoSearch", userIDtoSearch)
         queryUser.exec_()
 
@@ -260,9 +261,9 @@ class Ui_MasterGUI(object):
 
         global userValidReviewCount
         index = QModelIndex()
-        index = tablemodel.index(0, 2, QModelIndex())
+        index = tablemodel.index(0, 1, QModelIndex())
         userValidReviewCount = tablemodel.data(index)
-        # print(userValidReviewCount)
+        print(userValidReviewCount)
 
         userTableView.show()
 
@@ -273,7 +274,8 @@ class Ui_MasterGUI(object):
 
         # QSqlQuery
         queryUser = QSqlQuery()  # --44NNdtngXMzsxyN7ju6Q
-        queryUser.prepare(" SELECT * FROM review WHERE user_id = :userIDtoSearch ORDER BY date ASC ")
+        queryUser.prepare(
+            " SELECT id, business_id, user_id, stars, date, text FROM review WHERE user_id = :userIDtoSearch ORDER BY date ASC ")
         queryUser.bindValue(":userIDtoSearch", userIDtoSearch)
         queryUser.exec_()
 
@@ -285,7 +287,7 @@ class Ui_MasterGUI(object):
 
         global userAllReviewCount
         userAllReviewCount = tablemodel.rowCount()
-        # print(userAllReviewCount)
+        print(userAllReviewCount)
 
         userReviewTableView.setModel(tablemodel)
         print(tablemodel.lastError().text())  # Print sql query error
@@ -301,12 +303,14 @@ class Ui_MasterGUI(object):
 
         # QSqlQuery
         queryUser = QSqlQuery()  # --7zmmkVg-IMGaXbuVd0SQ
-        queryUser.prepare(" SELECT * FROM review WHERE business_id = :businessIDtoSearch ORDER BY date ASC ")
+        queryUser.prepare(
+            " SELECT id, business_id, user_id, stars, date, text FROM review WHERE business_id = :businessIDtoSearch ORDER BY date ASC ")
         queryUser.bindValue(":businessIDtoSearch", businessIDtoSearch)
         queryUser.exec_()
 
         queryCountAll = QSqlQuery()
-        queryCountAll.prepare(" SELECT * FROM business WHERE id LIKE :businessIDtoSearch ORDER BY date ASC ")
+        queryCountAll.prepare(
+            " SELECT id, name, stars, review_count FROM business WHERE id LIKE :businessIDtoSearch")
         queryCountAll.bindValue(":businessIDtoSearch", businessIDtoSearch)
         queryCountAll.exec_()
 
@@ -314,19 +318,18 @@ class Ui_MasterGUI(object):
         tablemodel = QSqlQueryModel()
         tablemodel.setQuery(queryUser)
 
-        businessTableModel = QSqlQueryModel()
-        businessTableModel.setQuery(queryCountAll)
-
-        # print(userIDtoSearch)
+        tablemodel2 = QSqlQueryModel()
+        tablemodel2.setQuery(queryCountAll)
 
         businessTableView.setModel(tablemodel)
         print(tablemodel.lastError().text())
+        print(tablemodel2.lastError().text())
 
         ##############################
         global businessReviewCountAll
         index = QModelIndex()
-        index = businessTableModel.index(0, 10, QModelIndex())
-        businessReviewCountAll = businessTableModel.data(index)
+        index = tablemodel2.index(0, 3, QModelIndex())
+        businessReviewCountAll = tablemodel2.data(index)
 
         global businessReviewCountValid
         businessReviewCountValid = tablemodel.rowCount()
@@ -337,13 +340,12 @@ class Ui_MasterGUI(object):
         self.calculateBusinessFakePercent()
 
     def calculateUserFakePercent(self):
-        # print(userAllReviewCount) #test global variable working status
         self.label_fakePercentageVar.setText(str(userAllReviewCount / userValidReviewCount * 100))
 
     def calculateBusinessFakePercent(self):
-        #self.label_BusinessPercentage.setText(str(businessReviewCountValid / businessReviewCountAll * 100))
-        print(businessReviewCountAll)
-        print(businessReviewCountValid)
+        # print(businessReviewCountAll)
+        # print(businessReviewCountValid)
+        self.label_BusinessPercentage.setText(str(businessReviewCountValid / businessReviewCountAll * 100))
 
 
 if __name__ == "__main__":
