@@ -12,6 +12,10 @@ from PyQt5.QtGui import *
 from PyQt5.QtSql import *
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QMessageBox
 
+import pandas
+import numpy
+import scipy
+
 #############################################
 # Global Variable
 db = QSqlDatabase.addDatabase('QMYSQL')
@@ -265,7 +269,10 @@ class Ui_MasterGUI(object):
         userValidReviewCount = tablemodel.data(index)
         print(userValidReviewCount)
 
-        userTableView.show()
+        if userValidReviewCount is not None:
+            userTableView.show()
+        else:
+            QMessageBox.about(MasterGUI, "User Search Result Error", "No such user.")
 
     def displayUsersAllReviews(self):
 
@@ -287,14 +294,17 @@ class Ui_MasterGUI(object):
 
         global userAllReviewCount
         userAllReviewCount = tablemodel.rowCount()
-        print(userAllReviewCount)
+        # print(userAllReviewCount)
 
         userReviewTableView.setModel(tablemodel)
         print(tablemodel.lastError().text())  # Print sql query error
 
         userReviewTableView.show()
 
-        self.calculateUserFakePercent()
+        if userValidReviewCount is not None:
+            self.calculateUserFakePercent()
+        else:
+            QMessageBox.about(MasterGUI, "User Search Result Error", "No such user.")
 
     def displayBusinessAllReviews(self):
 
@@ -340,12 +350,12 @@ class Ui_MasterGUI(object):
         self.calculateBusinessFakePercent()
 
     def calculateUserFakePercent(self):
-        self.label_fakePercentageVar.setText(str(userAllReviewCount / userValidReviewCount * 100))
+        self.label_fakePercentageVar.setText(str((1 - userAllReviewCount / userValidReviewCount) * 100))
 
     def calculateBusinessFakePercent(self):
         # print(businessReviewCountAll)
         # print(businessReviewCountValid)
-        self.label_BusinessPercentage.setText(str(businessReviewCountValid / businessReviewCountAll * 100))
+        self.label_BusinessPercentage.setText(str((1 - businessReviewCountValid / businessReviewCountAll) * 100))
 
 
 if __name__ == "__main__":
