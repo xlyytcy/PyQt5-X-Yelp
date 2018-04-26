@@ -350,15 +350,20 @@ class Ui_MasterGUI(object):
         self.calculateBusinessFakePercent()
 
     def calculateUserFakePercent(self):
-        self.label_fakePercentageVar.setText(str((1 - userAllReviewCount / userValidReviewCount) * 100))
+
+        if userValidReviewCount is not None and userAllReviewCount is not None:
+            self.label_fakePercentageVar.setText(str((1 - userAllReviewCount / userValidReviewCount) * 100))
+        else:
+            QMessageBox.about(MasterGUI, "No Entries ", "Search another user.")
 
     def calculateBusinessFakePercent(self):
-        print(businessReviewCountAll)
-        print(businessReviewCountValid)
-        if businessReviewCountAll != None and businessReviewCountValid != None:
+
+        # print(businessReviewCountAll)
+        # print(businessReviewCountValid)
+        if businessReviewCountAll is not None and businessReviewCountValid is not None:
             self.label_BusinessPercentage.setText(str((1 - businessReviewCountValid / businessReviewCountAll) * 100))
         else:
-            QMessageBox.about(MasterGUI, "No Entries ", "Search something else.")
+            QMessageBox.about(MasterGUI, "No Entries ", "Search another business.")
 
 
 if __name__ == "__main__":

@@ -48,10 +48,11 @@
       <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mastergui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="366" column="42" lean-forward="true" selection-start-line="366" selection-start-column="42" selection-end-line="366" selection-end-column="42" />
+            <state relative-caret-position="170">
+              <caret line="356" column="66" selection-start-line="356" selection-start-column="66" selection-end-line="356" selection-end-column="66" />
               <folding>
                 <element signature="e#198#240#0" expanded="true" />
+                <element signature="e#918#10121#0" />
               </folding>
             </state>
           </provider>
@@ -380,6 +381,7 @@
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#918#10121#0" />
           </folding>
         </state>
       </provider>
@@ -457,6 +459,7 @@
           <caret line="206" column="38" selection-start-line="206" selection-start-column="38" selection-end-line="206" selection-end-column="38" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#918#10121#0" />
           </folding>
         </state>
       </provider>
@@ -478,6 +481,7 @@
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#918#10121#0" />
           </folding>
         </state>
       </provider>
@@ -534,6 +538,7 @@
           <caret line="343" lean-forward="true" selection-start-line="343" selection-end-line="343" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#918#10121#0" />
           </folding>
         </state>
       </provider>
@@ -555,6 +560,7 @@
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#918#10121#0" />
           </folding>
         </state>
       </provider>
@@ -610,10 +616,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mastergui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="366" column="42" lean-forward="true" selection-start-line="366" selection-start-column="42" selection-end-line="366" selection-end-column="42" />
+        <state relative-caret-position="170">
+          <caret line="356" column="66" selection-start-line="356" selection-start-column="66" selection-end-line="356" selection-end-column="66" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#918#10121#0" />
           </folding>
         </state>
       </provider>
