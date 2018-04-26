@@ -353,9 +353,12 @@ class Ui_MasterGUI(object):
         self.label_fakePercentageVar.setText(str((1 - userAllReviewCount / userValidReviewCount) * 100))
 
     def calculateBusinessFakePercent(self):
-        # print(businessReviewCountAll)
-        # print(businessReviewCountValid)
-        self.label_BusinessPercentage.setText(str((1 - businessReviewCountValid / businessReviewCountAll) * 100))
+        print(businessReviewCountAll)
+        print(businessReviewCountValid)
+        if businessReviewCountAll != None and businessReviewCountValid != None:
+            self.label_BusinessPercentage.setText(str((1 - businessReviewCountValid / businessReviewCountAll) * 100))
+        else:
+            QMessageBox.about(MasterGUI, "No Entries ", "Search something else.")
 
 
 if __name__ == "__main__":
