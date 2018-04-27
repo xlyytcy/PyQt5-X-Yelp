@@ -56,6 +56,11 @@ Non-technicle Weblinks
 Git
 - https://gist.github.com/rvl/c3f156e117e22a25f242 #multiple remote push
 
+Google Drive API
+- http://www.countingcalculi.com/explanations/google_sheets_and_jupyter_notebooks/
+- https://gist.github.com/egradman/3b8140930aef97f9b0e4
+
+
 
 
 
