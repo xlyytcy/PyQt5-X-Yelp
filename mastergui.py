@@ -30,6 +30,30 @@ businessReviewCountAll = 0
 
 
 #############################################
+class PandasModel(QtCore.QAbstractTableModel):
+    """
+    Class to populate a table view with a pandas dataframe
+    """
+    def __init__(self, data, parent=None):
+        QtCore.QAbstractTableModel.__init__(self, parent)
+        self._data = data
+
+    def rowCount(self, parent=None):
+        return len(self._data.values)
+
+    def columnCount(self, parent=None):
+        return self._data.columns.size
+
+    def data(self, index, role=QtCore.Qt.DisplayRole):
+        if index.isValid():
+            if role == QtCore.Qt.DisplayRole:
+                return str(self._data.values[index.row()][index.column()])
+        return None
+
+    def headerData(self, col, orientation, role):
+        if orientation == QtCore.Qt.Horizontal and role == QtCore.Qt.DisplayRole:
+            return self._data.columns[col]
+        return None
 
 class Ui_MasterGUI(object):
 
@@ -171,11 +195,42 @@ class Ui_MasterGUI(object):
         font.setItalic(True)
         font.setWeight(75)
         self.label_BusinessPercentage.setFont(font)
+        self.label_BusinessPercentage.setText("")
         self.label_BusinessPercentage.setAlignment(QtCore.Qt.AlignCenter)
         self.label_BusinessPercentage.setObjectName("label_BusinessPercentage")
         self.gridLayout_Business.addWidget(self.label_BusinessPercentage, 1, 1, 1, 1)
         self.gridLayout_7.addLayout(self.gridLayout_Business, 0, 0, 1, 1)
         self.overallTabs.addTab(self.tab_Business, "")
+        self.tab_Recommendation = QtWidgets.QWidget()
+        self.tab_Recommendation.setObjectName("tab_Recommendation")
+        self.gridLayout_6 = QtWidgets.QGridLayout(self.tab_Recommendation)
+        self.gridLayout_6.setContentsMargins(11, 11, 11, 11)
+        self.gridLayout_6.setSpacing(6)
+        self.gridLayout_6.setObjectName("gridLayout_6")
+        self.gridLayout_Recomm = QtWidgets.QGridLayout()
+        self.gridLayout_Recomm.setSpacing(6)
+        self.gridLayout_Recomm.setObjectName("gridLayout_Recomm")
+        self.lineEdit_UserForRecom = QtWidgets.QLineEdit(self.tab_Recommendation)
+        self.lineEdit_UserForRecom.setObjectName("lineEdit_UserForRecom")
+        self.gridLayout_Recomm.addWidget(self.lineEdit_UserForRecom, 0, 1, 1, 1)
+        self.pb_SearchForRecom = QtWidgets.QPushButton(self.tab_Recommendation)
+        self.pb_SearchForRecom.setObjectName("pb_SearchForRecom")
+        self.gridLayout_Recomm.addWidget(self.pb_SearchForRecom, 0, 2, 1, 1)
+        self.label_UserIDForRecommendation = QtWidgets.QLabel(self.tab_Recommendation)
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setUnderline(True)
+        font.setWeight(75)
+        self.label_UserIDForRecommendation.setFont(font)
+        self.label_UserIDForRecommendation.setTextFormat(QtCore.Qt.RichText)
+        self.label_UserIDForRecommendation.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_UserIDForRecommendation.setObjectName("label_UserIDForRecommendation")
+        self.gridLayout_Recomm.addWidget(self.label_UserIDForRecommendation, 0, 0, 1, 1)
+        self.gridLayout_6.addLayout(self.gridLayout_Recomm, 0, 0, 1, 1)
+        self.tableView_Recomm = QtWidgets.QTableView(self.tab_Recommendation)
+        self.tableView_Recomm.setObjectName("tableView_Recomm")
+        self.gridLayout_6.addWidget(self.tableView_Recomm, 1, 0, 1, 1)
+        self.overallTabs.addTab(self.tab_Recommendation, "")
         self.gridLayout_2.addWidget(self.overallTabs, 0, 0, 1, 1)
         MasterGUI.setCentralWidget(self.centralWidget)
         self.menuBar = QtWidgets.QMenuBar(MasterGUI)
@@ -218,6 +273,10 @@ class Ui_MasterGUI(object):
         self.label.setText(_translate("MasterGUI", "% Fake Review"))
         self.label_BusinessPercentage.setText(_translate("MasterGUI", " "))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Business), _translate("MasterGUI", "Business"))
+        self.pb_SearchForRecom.setText(_translate("MasterGUI", "Search For Recommendation"))
+        self.label_UserIDForRecommendation.setText(_translate("MasterGUI", " Enter User ID "))
+        self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Recommendation),
+                                    _translate("MasterGUI", "Recommendation"))
 
     def connectDB(self):
         userName, ok = QInputDialog.getText(MasterGUI, "Input User Name", "User Name:", QLineEdit.Password)

@@ -7,24 +7,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtSql import *
-from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QMessageBox
-
-#############################################
-# Global Variable
-db = QSqlDatabase.addDatabase('QMYSQL')
-db.setHostName('yelpdb.clzycvghm6ps.us-east-2.rds.amazonaws.com')
-db.setDatabaseName('yelp_db')
-userIDtoSearch = ''
-businessIDtoSearch = ''
-
-
-#############################################
 
 class Ui_MasterGUI(object):
-
     def setupUi(self, MasterGUI):
         MasterGUI.setObjectName("MasterGUI")
         MasterGUI.resize(784, 743)
@@ -48,8 +32,7 @@ class Ui_MasterGUI(object):
         self.gridLayout_3.setSpacing(6)
         self.gridLayout_3.setObjectName("gridLayout_3")
         self.tableView_User = QtWidgets.QTableView(self.tab_User)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding,
-                                           QtWidgets.QSizePolicy.MinimumExpanding)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.MinimumExpanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.tableView_User.sizePolicy().hasHeightForWidth())
@@ -156,45 +139,55 @@ class Ui_MasterGUI(object):
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.gridLayout_Business.addWidget(self.label, 1, 0, 1, 1)
-        self.label_2 = QtWidgets.QLabel(self.tab_Business)
+        self.label_BusinessPercentage = QtWidgets.QLabel(self.tab_Business)
         font = QtGui.QFont()
         font.setFamily("Helvetica Neue")
         font.setBold(True)
         font.setItalic(True)
         font.setWeight(75)
-        self.label_2.setFont(font)
-        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_2.setObjectName("label_2")
-        self.gridLayout_Business.addWidget(self.label_2, 1, 1, 1, 1)
+        self.label_BusinessPercentage.setFont(font)
+        self.label_BusinessPercentage.setText("")
+        self.label_BusinessPercentage.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_BusinessPercentage.setObjectName("label_BusinessPercentage")
+        self.gridLayout_Business.addWidget(self.label_BusinessPercentage, 1, 1, 1, 1)
         self.gridLayout_7.addLayout(self.gridLayout_Business, 0, 0, 1, 1)
         self.overallTabs.addTab(self.tab_Business, "")
+        self.tab_Recommendation = QtWidgets.QWidget()
+        self.tab_Recommendation.setObjectName("tab_Recommendation")
+        self.gridLayout_6 = QtWidgets.QGridLayout(self.tab_Recommendation)
+        self.gridLayout_6.setContentsMargins(11, 11, 11, 11)
+        self.gridLayout_6.setSpacing(6)
+        self.gridLayout_6.setObjectName("gridLayout_6")
+        self.gridLayout_Recomm = QtWidgets.QGridLayout()
+        self.gridLayout_Recomm.setSpacing(6)
+        self.gridLayout_Recomm.setObjectName("gridLayout_Recomm")
+        self.lineEdit_UserForRecom = QtWidgets.QLineEdit(self.tab_Recommendation)
+        self.lineEdit_UserForRecom.setObjectName("lineEdit_UserForRecom")
+        self.gridLayout_Recomm.addWidget(self.lineEdit_UserForRecom, 0, 1, 1, 1)
+        self.pb_SearchForRecom = QtWidgets.QPushButton(self.tab_Recommendation)
+        self.pb_SearchForRecom.setObjectName("pb_SearchForRecom")
+        self.gridLayout_Recomm.addWidget(self.pb_SearchForRecom, 0, 2, 1, 1)
+        self.label_UserIDForRecommendation = QtWidgets.QLabel(self.tab_Recommendation)
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setUnderline(True)
+        font.setWeight(75)
+        self.label_UserIDForRecommendation.setFont(font)
+        self.label_UserIDForRecommendation.setTextFormat(QtCore.Qt.RichText)
+        self.label_UserIDForRecommendation.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_UserIDForRecommendation.setObjectName("label_UserIDForRecommendation")
+        self.gridLayout_Recomm.addWidget(self.label_UserIDForRecommendation, 0, 0, 1, 1)
+        self.gridLayout_6.addLayout(self.gridLayout_Recomm, 0, 0, 1, 1)
+        self.tableView_Recomm = QtWidgets.QTableView(self.tab_Recommendation)
+        self.tableView_Recomm.setObjectName("tableView_Recomm")
+        self.gridLayout_6.addWidget(self.tableView_Recomm, 1, 0, 1, 1)
+        self.overallTabs.addTab(self.tab_Recommendation, "")
         self.gridLayout_2.addWidget(self.overallTabs, 0, 0, 1, 1)
         MasterGUI.setCentralWidget(self.centralWidget)
-        self.menuBar = QtWidgets.QMenuBar(MasterGUI)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 784, 22))
-        self.menuBar.setObjectName("menuBar")
-        MasterGUI.setMenuBar(self.menuBar)
-        self.mainToolBar = QtWidgets.QToolBar(MasterGUI)
-        self.mainToolBar.setObjectName("mainToolBar")
-        MasterGUI.addToolBar(QtCore.Qt.TopToolBarArea, self.mainToolBar)
-        self.statusBar = QtWidgets.QStatusBar(MasterGUI)
-        self.statusBar.setObjectName("statusBar")
-        MasterGUI.setStatusBar(self.statusBar)
 
         self.retranslateUi(MasterGUI)
-        self.overallTabs.setCurrentIndex(0)
-        # self.pb_DBserver.clicked.connect(MasterGUI.close)
-
-        #############################################
-        ## Signal and Slots
-
-        # Adding DB connection
-        self.pb_DBserver.clicked.connect(self.connectDB)
-        self.pb_searchUser.clicked.connect(self.displayUsers)
-        self.pb_searchUser.clicked.connect(self.displayUsersAllReviews)
-        self.pb_searchBusiness.clicked.connect(self.displayBusinessAllReviews)
-
-        #############################################
+        self.overallTabs.setCurrentIndex(2)
+        self.pb_DBserver.clicked.connect(MasterGUI.close)
         QtCore.QMetaObject.connectSlotsByName(MasterGUI)
 
     def retranslateUi(self, MasterGUI):
@@ -202,116 +195,23 @@ class Ui_MasterGUI(object):
         MasterGUI.setWindowTitle(_translate("MasterGUI", "MasterGUI"))
         self.pb_DBserver.setText(_translate("MasterGUI", "DB Server Usr/PW"))
         self.pb_searchUser.setText(_translate("MasterGUI", "Search"))
-        self.label_User.setText(_translate("MasterGUI",
-                                           "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
+        self.label_User.setText(_translate("MasterGUI", "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
         self.label_fakePercetangeFixed.setText(_translate("MasterGUI", "%Fake Review"))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_User), _translate("MasterGUI", "User"))
         self.pb_searchBusiness.setText(_translate("MasterGUI", "             Search           "))
         self.label.setText(_translate("MasterGUI", "% Fake Review"))
-        self.label_2.setText(_translate("MasterGUI", "TextLabel"))
         self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Business), _translate("MasterGUI", "Business"))
-
-    def connectDB(self):
-        userName, ok = QInputDialog.getText(MasterGUI, "Input User Name", "User Name:", QLineEdit.Password)
-
-        if ok and userName != '':
-            # print(userName)
-            db.setUserName(userName)
-
-        passWord, ok = QInputDialog.getText(MasterGUI, "Input Password", "Password:", QLineEdit.Password)
-
-        if ok and passWord != '':
-            # print(passWord)
-            db.setPassword(passWord)
-            # print(db.open())
-
-            if db.open() == True:  # Essential to have DB connected
-                self.printDBstatusOK()
-            else:
-                self.printDBstatusNO()
-
-    def printDBstatusOK(self):
-        QMessageBox.about(MasterGUI, "DB Status", "Remote DB Connected!")
-
-    def printDBstatusNO(self):
-        QMessageBox.about(MasterGUI, "DB Status", "Remote DB connection failed!")
-
-    def displayUsers(self):
-        userTableView = self.tableView_User
-        userIDtoSearch = str(self.lineEdit_User.text())  # assure this is a string instead of QString
-
-        # QSqlQuery
-        queryUser = QSqlQuery()
-        queryUser.prepare(" SELECT * FROM user WHERE id = :userIDtoSearch ")
-        queryUser.bindValue(":userIDtoSearch", userIDtoSearch)
-        queryUser.exec_()
-
-        # QSqlQueryModel
-        tablemodel = QSqlQueryModel()
-        tablemodel.setQuery(queryUser)
-
-        # print(userIDtoSearch)
-
-        userTableView.setModel(tablemodel)
-        print(tablemodel.lastError().text())
-        userTableView.show()
-
-    def displayUsersAllReviews(self):
-
-        userReviewTableView = self.tableView_UserAllReviews
-        userIDtoSearch = str(self.lineEdit_User.text())  # assure this is a string instead of QString
-
-        # QSqlQuery
-        queryUser = QSqlQuery()  # --44NNdtngXMzsxyN7ju6Q
-        queryUser.prepare(" SELECT * FROM review WHERE user_id = :userIDtoSearch ORDER BY date ASC ")
-        queryUser.bindValue(":userIDtoSearch", userIDtoSearch)
-        queryUser.exec_()
-
-        # QSqlQueryModel
-        tablemodel = QSqlQueryModel()
-        tablemodel.setQuery(queryUser)
-
-        # print(userIDtoSearch)
-
-        userReviewTableView.setModel(tablemodel)
-        print(tablemodel.lastError().text())
-        userReviewTableView.show()
-
-    def displayBusinessAllReviews(self):
-
-        businessTableView = self.tableView_Business
-        businessIDtoSearch = str(self.lineEdit_businessInput.text())  # assure this is a string instead of QString
-
-        # QSqlQuery
-        queryUser = QSqlQuery()  # --7zmmkVg-IMGaXbuVd0SQ
-        queryUser.prepare(" SELECT * FROM review WHERE business_id = :businessIDtoSearch ORDER BY date ASC ")
-        queryUser.bindValue(":businessIDtoSearch", businessIDtoSearch)
-        queryUser.exec_()
-
-        # QSqlQueryModel
-        tablemodel = QSqlQueryModel()
-        tablemodel.setQuery(queryUser)
-
-        # print(userIDtoSearch)
-
-        businessTableView.setModel(tablemodel)
-        print(tablemodel.lastError().text())
-        businessTableView.show()
-
-    def calculateUserFakePercent(self):
-        print('nonsense')
-
-    def calculateBusinessFakePercent(self):
-        print('nonsense')
-
+        self.pb_SearchForRecom.setText(_translate("MasterGUI", "Search For Recommendation"))
+        self.label_UserIDForRecommendation.setText(_translate("MasterGUI", " Enter User ID "))
+        self.overallTabs.setTabText(self.overallTabs.indexOf(self.tab_Recommendation), _translate("MasterGUI", "Recommendation"))
 
 
 if __name__ == "__main__":
     import sys
-
     app = QtWidgets.QApplication(sys.argv)
     MasterGUI = QtWidgets.QMainWindow()
     ui = Ui_MasterGUI()
     ui.setupUi(MasterGUI)
     MasterGUI.show()
     sys.exit(app.exec_())
+

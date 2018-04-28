@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Reference_Page.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reference_Page.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yelp x Python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupyterNotebookFile/.ipynb_checkpoints/DNS_Assignment-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mastergui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mastergui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newMasterGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/newMasterGUI.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Reference_Page.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Reference_Page.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Reference_Page.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="405">
+              <first_editor relative-caret-position="883">
                 <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
               </first_editor>
               <second_editor />
@@ -45,27 +51,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mastergui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-122">
-              <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+            <state relative-caret-position="232">
+              <caret line="251" column="49" selection-start-line="251" selection-start-column="49" selection-end-line="251" selection-end-column="49" />
               <folding>
                 <element signature="e#198#240#0" expanded="true" />
-                <element signature="e#918#10121#0" />
-                <element signature="e#10171#11219#0" />
                 <element signature="e#12110#13111#0" />
                 <element signature="e#13160#14242#0" />
-                <element signature="e#14294#15864#0" />
                 <element signature="e#16244#16274#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yelp_dataset_schema.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/yelp_dataset_schema.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="Yelp x Python.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Yelp x Python.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1110">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -106,6 +113,8 @@
       <find>userAllReviewCount</find>
       <find>businessTableView</find>
       <find>print</find>
+      <find>label_BusinessPercentage</find>
+      <find>tab</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,8 +132,8 @@
         <option value="$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py" />
         <option value="$PROJECT_DIR$/newMasterGUI.py" />
         <option value="$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb" />
-        <option value="$PROJECT_DIR$/mastergui.py" />
         <option value="$PROJECT_DIR$/Reference_Page.md" />
+        <option value="$PROJECT_DIR$/mastergui.py" />
       </list>
     </option>
   </component>
@@ -370,27 +379,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Reference_Page.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="540">
-            <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mastergui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1845">
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#10171#11219#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>
@@ -469,11 +465,8 @@
           <caret line="206" column="38" selection-start-line="206" selection-start-column="38" selection-end-line="206" selection-end-column="38" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#10171#11219#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>
@@ -496,11 +489,8 @@
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#10171#11219#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>
@@ -558,11 +548,8 @@
           <caret line="343" lean-forward="true" selection-start-line="343" selection-end-line="343" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#10171#11219#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>
@@ -585,11 +572,8 @@
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#10171#11219#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>
@@ -634,29 +618,33 @@
     <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/yelp_dataset_schema.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mastergui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding>
-            <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#10171#11219#0" />
-            <element signature="e#12110#13111#0" />
-            <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
-            <element signature="e#16244#16274#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Reference_Page.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="405">
+          <first_editor relative-caret-position="883">
             <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yelp x Python.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mastergui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="251" column="49" selection-start-line="251" selection-start-column="49" selection-end-line="251" selection-end-column="49" />
+          <folding>
+            <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#12110#13111#0" />
+            <element signature="e#13160#14242#0" />
+            <element signature="e#16244#16274#0" />
+          </folding>
         </state>
       </provider>
     </entry>
