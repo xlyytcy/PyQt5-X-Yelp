@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yelp x Python.py" beforeDir="false" afterPath="$PROJECT_DIR$/recommendationSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mastergui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommendationSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/recommendationSystem.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mastergui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="158">
               <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#198#240#0" expanded="true" />
@@ -69,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recommendationSystem.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="recommendationSystem.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recommendationSystem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="192">
+              <caret line="365" column="55" selection-start-line="365" selection-start-column="55" selection-end-line="365" selection-end-column="55" />
               <folding>
                 <element signature="e#451#470#0" expanded="true" />
               </folding>
@@ -141,6 +139,7 @@
         <option value="$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb" />
         <option value="$PROJECT_DIR$/Reference_Page.md" />
         <option value="$PROJECT_DIR$/mastergui.py" />
+        <option value="$PROJECT_DIR$/recommendationSystem.py" />
       </list>
     </option>
   </component>
@@ -336,8 +335,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298153" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298153" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3298153" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27968338" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.16263737" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27968338" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.16263737" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
@@ -665,19 +664,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recommendationSystem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#451#470#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mastergui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="158">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
@@ -691,6 +680,16 @@
             <element signature="e#15923#16197#0" />
             <element signature="e#16244#16618#0" />
             <element signature="e#16244#16274#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommendationSystem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="365" column="55" selection-start-line="365" selection-start-column="55" selection-end-line="365" selection-end-column="55" />
+          <folding>
+            <element signature="e#451#470#0" expanded="true" />
           </folding>
         </state>
       </provider>
