@@ -12,9 +12,10 @@ from PyQt5.QtGui import *
 from PyQt5.QtSql import *
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QMessageBox
 
-import pandas
-import numpy
-import scipy
+import pandas as pd
+import numpy as np
+
+import recommendationSystem as rs
 
 #############################################
 # Global Variable

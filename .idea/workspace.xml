@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Yelp x Python.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JupyterNotebookFile/.ipynb_checkpoints/DNS_Assignment-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yelp x Python.py" beforeDir="false" afterPath="$PROJECT_DIR$/recommendationSystem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mastergui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mastergui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newMasterGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/newMasterGUI.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,23 +50,33 @@
       <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mastergui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="251" column="49" selection-start-line="251" selection-start-column="49" selection-end-line="251" selection-end-column="49" />
+            <state relative-caret-position="200">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#198#240#0" expanded="true" />
+                <element signature="e#897#1671#0" />
+                <element signature="e#918#10121#0" />
+                <element signature="e#12143#13545#0" />
+                <element signature="e#11254#11852#0" />
                 <element signature="e#12110#13111#0" />
                 <element signature="e#13160#14242#0" />
+                <element signature="e#14294#15864#0" />
+                <element signature="e#15923#16197#0" />
+                <element signature="e#16244#16618#0" />
                 <element signature="e#16244#16274#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Yelp x Python.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Yelp x Python.py">
+      <file leaf-file-name="recommendationSystem.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recommendationSystem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="76">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#451#470#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,6 +121,7 @@
       <find>print</find>
       <find>label_BusinessPercentage</find>
       <find>tab</find>
+      <find>tabTe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,11 +186,6 @@
               <item name="YelpxPython" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="python3.6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YelpxPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YelpxPython" type="462c0819:PsiDirectoryNode" />
-              <item name="Yelp_Dataset_License" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -334,8 +336,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298153" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298153" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3298153" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27968338" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.16263737" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27968338" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.16263737" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
@@ -385,8 +387,15 @@
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#897#1671#0" />
+            <element signature="e#918#10121#0" />
+            <element signature="e#12143#13545#0" />
+            <element signature="e#11254#11852#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
+            <element signature="e#14294#15864#0" />
+            <element signature="e#15923#16197#0" />
+            <element signature="e#16244#16618#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>
@@ -465,8 +474,15 @@
           <caret line="206" column="38" selection-start-line="206" selection-start-column="38" selection-end-line="206" selection-end-column="38" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#897#1671#0" />
+            <element signature="e#918#10121#0" />
+            <element signature="e#12143#13545#0" />
+            <element signature="e#11254#11852#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
+            <element signature="e#14294#15864#0" />
+            <element signature="e#15923#16197#0" />
+            <element signature="e#16244#16618#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>
@@ -489,8 +505,15 @@
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#897#1671#0" />
+            <element signature="e#918#10121#0" />
+            <element signature="e#12143#13545#0" />
+            <element signature="e#11254#11852#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
+            <element signature="e#14294#15864#0" />
+            <element signature="e#15923#16197#0" />
+            <element signature="e#16244#16618#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>
@@ -548,8 +571,15 @@
           <caret line="343" lean-forward="true" selection-start-line="343" selection-end-line="343" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#897#1671#0" />
+            <element signature="e#918#10121#0" />
+            <element signature="e#12143#13545#0" />
+            <element signature="e#11254#11852#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
+            <element signature="e#14294#15864#0" />
+            <element signature="e#15923#16197#0" />
+            <element signature="e#16244#16618#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>
@@ -572,8 +602,15 @@
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#897#1671#0" />
+            <element signature="e#918#10121#0" />
+            <element signature="e#12143#13545#0" />
+            <element signature="e#11254#11852#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
+            <element signature="e#14294#15864#0" />
+            <element signature="e#15923#16197#0" />
+            <element signature="e#16244#16618#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>
@@ -628,21 +665,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yelp x Python.py">
+    <entry file="file://$PROJECT_DIR$/recommendationSystem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="76">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#451#470#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mastergui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="251" column="49" selection-start-line="251" selection-start-column="49" selection-end-line="251" selection-end-column="49" />
+        <state relative-caret-position="200">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
+            <element signature="e#897#1671#0" />
+            <element signature="e#918#10121#0" />
+            <element signature="e#12143#13545#0" />
+            <element signature="e#11254#11852#0" />
             <element signature="e#12110#13111#0" />
             <element signature="e#13160#14242#0" />
+            <element signature="e#14294#15864#0" />
+            <element signature="e#15923#16197#0" />
+            <element signature="e#16244#16618#0" />
             <element signature="e#16244#16274#0" />
           </folding>
         </state>

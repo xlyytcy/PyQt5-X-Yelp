@@ -6,14 +6,14 @@
 # In[1]:
 
 
-# import seaborn #Seaborn is a Python visualization library based on matplotlib. It provides a high-level 
+# import seaborn #Seaborn is a Python visualization library based on matplotlib. It provides a high-level
                #interface for drawing attractive statistical graphics.
 
 
 # In[2]:
 
 
-# import vaderSentiment #“VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text.” 
+# import vaderSentiment #“VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text.”
                       #published at ICWSM-14
 
 
@@ -35,9 +35,9 @@ import matplotlib.pyplot as plt
 
 
 # Read from Google Drive API
-# client_id = '246749435321-4kau6brtf8m7sn3rrsqnln6jrtm892ge.apps.googleusercontent.com' # open('hello.txt', 'w').read() 
+# client_id = '246749435321-4kau6brtf8m7sn3rrsqnln6jrtm892ge.apps.googleusercontent.com' # open('hello.txt', 'w').read()
 # client_secret = 'ZVUispy3UNtwG5PxTOhWvRN3' # open('hello.txt', 'w').read()
-# 
+#
 # import oauth2client.client, oauth2client.file, oauth2client.tools
 # import gspread
 # flow = oauth2client.client.OAuth2WebServerFlow(client_id, client_secret, 'https://spreadsheets.google.com/feeds')
@@ -47,7 +47,7 @@ import matplotlib.pyplot as plt
 #     import argparse
 #     flags = argparse.ArgumentParser(parents=[oauth2client.tools.argparser]).parse_args([])
 #     credentials = oauth2client.tools.run_flow(flow, storage, flags)
-# 
+#
 # gc = gspread.authorize(credentials)
 
 
@@ -64,31 +64,31 @@ csv_user = pd.read_csv('/Users/XG/Documents/Yelp_DB/yelp-dataset/yelp_user.csv')
 # In[6]:
 
 
-csv_reviews.shape
+#csv_reviews.shape
 
 
 # In[7]:
 
 
-csv_reviews.head()
+#csv_reviews.head()
 
 
 # In[8]:
 
 
-csv_user.head()
+#csv_user.head()
 
 
 # In[9]:
 
 
-csv_business.head()
+#csv_business.head()
 
 
 # In[10]:
 
 
-csv_business.describe()
+#csv_business.describe()
 
 
 # In[11]:
@@ -121,7 +121,7 @@ business = business.groupby('state').filter(lambda r: len(r) > 20)
 # In[15]:
 
 
-business.describe()
+#business.describe()
 
 
 # In[16]:
@@ -139,13 +139,13 @@ merged_df = pd.merge(pd.merge(csv_reviews, business, on = 'business_id'), user, 
 # In[18]:
 
 
-merged_df.shape
+#merged_df.shape
 
 
 # In[19]:
 
 
-merged_df.head()
+#merged_df.head()
 
 
 # In[20]:
