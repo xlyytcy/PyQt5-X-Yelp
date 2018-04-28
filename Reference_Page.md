@@ -60,6 +60,12 @@ Google Drive API
 - http://www.countingcalculi.com/explanations/google_sheets_and_jupyter_notebooks/
 - https://gist.github.com/egradman/3b8140930aef97f9b0e4
 
+Related Interesting Research
+- https://medium.com/@zhiwei_zhang/final-blog-642fb9c7e781
+- https://github.com/abulhawa/yelp-recommender-system
+- https://nycdatascience.com/blog/student-works/capstone/yelper-collaborative-filtering-based-recommendation-system/
+
+
 
 
 
