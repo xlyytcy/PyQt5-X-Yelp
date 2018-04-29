@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'mastergui.ui'
-#
-# Created by: PyQt5 UI code generator 5.10.1
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -15,7 +7,8 @@ from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QMes
 import pandas as pd
 import numpy as np
 
-import recommendationSystem as rs
+from recommendationSystem import *
+from PandasModel import *
 
 #############################################
 # Global Variable
@@ -28,33 +21,36 @@ userAllReviewCount = 0
 userValidReviewCount = 0
 businessReviewCountValid = 0
 businessReviewCountAll = 0
+userIDtorecom = ''
 
 
 #############################################
-class PandasModel(QtCore.QAbstractTableModel):
-    """
-    Class to populate a table view with a pandas dataframe
-    """
-    def __init__(self, data, parent=None):
-        QtCore.QAbstractTableModel.__init__(self, parent)
-        self._data = data
+# class PandasModel(QtCore.QAbstractTableModel):
+#     """
+#     Class to populate a table view with a pandas dataframe
+#     """
+#
+#     def __init__(self, data, parent=None):
+#         QtCore.QAbstractTableModel.__init__(self, parent)
+#         self._data = data
+#
+#     def rowCount(self, parent=None):
+#         return len(self._data.values)
+#
+#     def columnCount(self, parent=None):
+#         return self._data.columns.size
+#
+#     def data(self, index, role=QtCore.Qt.DisplayRole):
+#         if index.isValid():
+#             if role == QtCore.Qt.DisplayRole:
+#                 return str(self._data.values[index.row()][index.column()])
+#         return None
+#
+#     def headerData(self, col, orientation, role):
+#         if orientation == QtCore.Qt.Horizontal and role == QtCore.Qt.DisplayRole:
+#             return self._data.columns[col]
+#         return None
 
-    def rowCount(self, parent=None):
-        return len(self._data.values)
-
-    def columnCount(self, parent=None):
-        return self._data.columns.size
-
-    def data(self, index, role=QtCore.Qt.DisplayRole):
-        if index.isValid():
-            if role == QtCore.Qt.DisplayRole:
-                return str(self._data.values[index.row()][index.column()])
-        return None
-
-    def headerData(self, col, orientation, role):
-        if orientation == QtCore.Qt.Horizontal and role == QtCore.Qt.DisplayRole:
-            return self._data.columns[col]
-        return None
 
 class Ui_MasterGUI(object):
 
@@ -257,6 +253,7 @@ class Ui_MasterGUI(object):
         self.pb_searchUser.clicked.connect(self.displayUsers)
         self.pb_searchUser.clicked.connect(self.displayUsersAllReviews)
         self.pb_searchBusiness.clicked.connect(self.displayBusinessAllReviews)
+        self.pb_SearchForRecom.clicked.connect(self.recomSysReadInput)
 
         #############################################
         QtCore.QMetaObject.connectSlotsByName(MasterGUI)
@@ -424,6 +421,16 @@ class Ui_MasterGUI(object):
             self.label_BusinessPercentage.setText(str((1 - businessReviewCountValid / businessReviewCountAll) * 100))
         else:
             QMessageBox.about(MasterGUI, "No Entries ", "Search another business.")
+
+    def recomSysReadInput(self):
+        global userIDtorecom
+        userIDtorecom = str(self.lineEdit_UserForRecom.text())
+
+        recommended_business_names, recommended_business_idx = recommend(userIDtorecom)
+
+        pd_model = PandasModel(business.loc[recommended_business_names][:20])
+        self.tableView_Recomm.setModel(pd_model)
+
 
 
 if __name__ == "__main__":

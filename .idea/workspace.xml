@@ -5,6 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/PandasModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/costCalulator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataSaver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileParser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mastergui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mastergui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recommendationSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/recommendationSystem.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +45,8 @@
         <entry file="file://$PROJECT_DIR$/Reference_Page.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="883">
-                <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+              <first_editor relative-caret-position="990">
+                <caret line="66" selection-start-line="66" selection-end-line="66" />
               </first_editor>
               <second_editor />
             </state>
@@ -48,33 +56,80 @@
       <file leaf-file-name="mastergui.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mastergui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="359">
+              <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
               <folding>
-                <element signature="e#198#240#0" expanded="true" />
-                <element signature="e#897#1671#0" />
-                <element signature="e#918#10121#0" />
-                <element signature="e#12143#13545#0" />
-                <element signature="e#11254#11852#0" />
-                <element signature="e#12110#13111#0" />
-                <element signature="e#13160#14242#0" />
-                <element signature="e#14294#15864#0" />
-                <element signature="e#15923#16197#0" />
-                <element signature="e#16244#16618#0" />
-                <element signature="e#16244#16274#0" />
+                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#12851#14253#0" />
+                <element signature="e#14288#14886#0" />
+                <element signature="e#16194#17276#0" />
+                <element signature="e#17328#18898#0" />
+                <element signature="e#18949#19223#0" />
+                <element signature="e#19278#19655#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recommendationSystem.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PandasModel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PandasModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recommendationSystem.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recommendationSystem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="365" column="55" selection-start-line="365" selection-start-column="55" selection-end-line="365" selection-end-column="55" />
+            <state relative-caret-position="401">
+              <caret line="41" selection-start-line="41" selection-start-column="2" selection-end-line="42" selection-end-column="53" />
               <folding>
-                <element signature="e#451#470#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataSaver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataSaver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="18" column="28" selection-start-line="18" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="costCalulator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/costCalulator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fileParser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fileParser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -90,9 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>resize</find>
-      <find>pb_DBserver</find>
-      <find>searchUser</find>
       <find>searhUser</find>
       <find>userIDtoSearch</find>
       <find>allRe</find>
@@ -119,7 +171,10 @@
       <find>print</find>
       <find>label_BusinessPercentage</find>
       <find>tab</find>
+      <find>bytes_in</find>
       <find>tabTe</find>
+      <find>user</find>
+      <find>lamda</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,8 +193,14 @@
         <option value="$PROJECT_DIR$/newMasterGUI.py" />
         <option value="$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb" />
         <option value="$PROJECT_DIR$/Reference_Page.md" />
-        <option value="$PROJECT_DIR$/mastergui.py" />
+        <option value="$PROJECT_DIR$/testFile.py" />
+        <option value="$PROJECT_DIR$/Yelp_Dataset_License/PandasModel.py" />
+        <option value="$PROJECT_DIR$/fileParser.py" />
+        <option value="$PROJECT_DIR$/costCalulator.py" />
+        <option value="$PROJECT_DIR$/dataSaver.py" />
         <option value="$PROJECT_DIR$/recommendationSystem.py" />
+        <option value="$PROJECT_DIR$/mastergui.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -152,10 +213,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="161" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="34" />
     <option name="y" value="22" />
-    <option name="width" value="1198" />
+    <option name="width" value="1406" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectView">
@@ -186,6 +247,11 @@
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="python3.6" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="YelpxPython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YelpxPython" type="462c0819:PsiDirectoryNode" />
+              <item name="Yelp_Dataset_License" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -203,6 +269,11 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/newMasterGUI.py" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -215,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mastergui">
+  <component name="RunManager" selected="Python.recommendationSystem">
     <configuration name="YelpxPython" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="YelpxPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,6 +323,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="dataSaver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="YelpxPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataSaver.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="mastergui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="YelpxPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -266,6 +356,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mastergui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="recommendationSystem" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="YelpxPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recommendationSystem.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -294,10 +403,14 @@
       <item itemvalue="Jupyter Notebook.YelpxPython" />
       <item itemvalue="Python.testPyqt5" />
       <item itemvalue="Python.mastergui" />
+      <item itemvalue="Python.dataSaver" />
+      <item itemvalue="Python.recommendationSystem" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.recommendationSystem" />
         <item itemvalue="Python.mastergui" />
+        <item itemvalue="Python.dataSaver" />
         <item itemvalue="Python.testPyqt5" />
       </list>
     </recent_temporary>
@@ -325,47 +438,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="22" width="1407" height="878" extended-state="6" />
+    <frame x="34" y="22" width="1406" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298153" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="303" height="678" id="Documentation" order="5" side_tool="true" weight="0.329927" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3298153" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298153" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3298153" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27968338" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.16263737" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298153" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28100264" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.17008798" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" sideWeight="0.5019685" side_tool="true" weight="0.2109489" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.11062271" />
-      <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298153" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298153" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3298153" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Structure" order="1" sideWeight="0.5019685" side_tool="true" weight="0.2109489" />
       <window_info anchor="right" x="0" y="0" width="303" height="678" id="Documentation" order="5" side_tool="true" weight="0.329927" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.40765172" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3298153" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,43 +477,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mastergui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1845">
-          <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
-          <folding>
-            <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#897#1671#0" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#12143#13545#0" />
-            <element signature="e#11254#11852#0" />
-            <element signature="e#12110#13111#0" />
-            <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
-            <element signature="e#15923#16197#0" />
-            <element signature="e#16244#16618#0" />
-            <element signature="e#16244#16274#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Trial.py" />
-    <entry file="file://$PROJECT_DIR$/mainwindow.py" />
-    <entry file="file://$PROJECT_DIR$/testPyqt" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -426,30 +486,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py" />
     <entry file="file://$PROJECT_DIR$/testPyqt.py" />
-    <entry file="file://$PROJECT_DIR$/testPyqt5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/testFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testPyqt5.py" />
+    <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/testFile.py" />
+    <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py" />
     <entry file="file://$PROJECT_DIR$/newMasterGUI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -472,17 +511,13 @@
         <state relative-caret-position="234">
           <caret line="206" column="38" selection-start-line="206" selection-start-column="38" selection-end-line="206" selection-end-column="38" />
           <folding>
-            <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#897#1671#0" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#12143#13545#0" />
-            <element signature="e#11254#11852#0" />
-            <element signature="e#12110#13111#0" />
-            <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
-            <element signature="e#15923#16197#0" />
-            <element signature="e#16244#16618#0" />
-            <element signature="e#16244#16274#0" />
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#12851#14253#0" />
+            <element signature="e#14288#14886#0" />
+            <element signature="e#16194#17276#0" />
+            <element signature="e#17328#18898#0" />
+            <element signature="e#18949#19223#0" />
+            <element signature="e#19278#19655#0" />
           </folding>
         </state>
       </provider>
@@ -503,17 +538,13 @@
         <state relative-caret-position="1845">
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
-            <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#897#1671#0" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#12143#13545#0" />
-            <element signature="e#11254#11852#0" />
-            <element signature="e#12110#13111#0" />
-            <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
-            <element signature="e#15923#16197#0" />
-            <element signature="e#16244#16618#0" />
-            <element signature="e#16244#16274#0" />
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#12851#14253#0" />
+            <element signature="e#14288#14886#0" />
+            <element signature="e#16194#17276#0" />
+            <element signature="e#17328#18898#0" />
+            <element signature="e#18949#19223#0" />
+            <element signature="e#19278#19655#0" />
           </folding>
         </state>
       </provider>
@@ -569,17 +600,13 @@
         <state relative-caret-position="690">
           <caret line="343" lean-forward="true" selection-start-line="343" selection-end-line="343" />
           <folding>
-            <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#897#1671#0" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#12143#13545#0" />
-            <element signature="e#11254#11852#0" />
-            <element signature="e#12110#13111#0" />
-            <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
-            <element signature="e#15923#16197#0" />
-            <element signature="e#16244#16618#0" />
-            <element signature="e#16244#16274#0" />
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#12851#14253#0" />
+            <element signature="e#14288#14886#0" />
+            <element signature="e#16194#17276#0" />
+            <element signature="e#17328#18898#0" />
+            <element signature="e#18949#19223#0" />
+            <element signature="e#19278#19655#0" />
           </folding>
         </state>
       </provider>
@@ -600,17 +627,13 @@
         <state relative-caret-position="1845">
           <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
-            <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#897#1671#0" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#12143#13545#0" />
-            <element signature="e#11254#11852#0" />
-            <element signature="e#12110#13111#0" />
-            <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
-            <element signature="e#15923#16197#0" />
-            <element signature="e#16244#16618#0" />
-            <element signature="e#16244#16274#0" />
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#12851#14253#0" />
+            <element signature="e#14288#14886#0" />
+            <element signature="e#16194#17276#0" />
+            <element signature="e#17328#18898#0" />
+            <element signature="e#18949#19223#0" />
+            <element signature="e#19278#19655#0" />
           </folding>
         </state>
       </provider>
@@ -651,46 +674,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/yelp_dataset_schema.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Reference_Page.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="883">
-            <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <first_editor relative-caret-position="990">
+            <caret line="66" selection-start-line="66" selection-end-line="66" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mastergui.py">
+    <entry file="file://$PROJECT_DIR$/testFile.py" />
+    <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/PandasModel.py" />
+    <entry file="file://$PROJECT_DIR$/fileParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/costCalulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
           <folding>
-            <element signature="e#198#240#0" expanded="true" />
-            <element signature="e#897#1671#0" />
-            <element signature="e#918#10121#0" />
-            <element signature="e#12143#13545#0" />
-            <element signature="e#11254#11852#0" />
-            <element signature="e#12110#13111#0" />
-            <element signature="e#13160#14242#0" />
-            <element signature="e#14294#15864#0" />
-            <element signature="e#15923#16197#0" />
-            <element signature="e#16244#16618#0" />
-            <element signature="e#16244#16274#0" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSaver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="28" selection-start-line="18" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recommendationSystem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="365" column="55" selection-start-line="365" selection-start-column="55" selection-end-line="365" selection-end-column="55" />
+        <state relative-caret-position="401">
+          <caret line="41" selection-start-line="41" selection-start-column="2" selection-end-line="42" selection-end-column="53" />
           <folding>
-            <element signature="e#451#470#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PandasModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mastergui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#12851#14253#0" />
+            <element signature="e#14288#14886#0" />
+            <element signature="e#16194#17276#0" />
+            <element signature="e#17328#18898#0" />
+            <element signature="e#18949#19223#0" />
+            <element signature="e#19278#19655#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
         </state>
       </provider>
     </entry>
