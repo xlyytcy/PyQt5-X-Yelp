@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb183bf7-9c88-4f74-bd8b-443082e2a375" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/PandasModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/costCalulator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataSaver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fileParser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mastergui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mastergui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/mastergui.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommendationSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/recommendationSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference_Page.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reference_Page.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,12 +33,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Reference_Page.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Reference_Page.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Reference_Page.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="990">
-                <caret line="66" selection-start-line="66" selection-end-line="66" />
+              <first_editor relative-caret-position="230">
+                <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               </first_editor>
               <second_editor />
             </state>
@@ -71,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="471">
@@ -192,7 +184,6 @@
         <option value="$PROJECT_DIR$/Yelp_Dataset_License/testSemi.py" />
         <option value="$PROJECT_DIR$/newMasterGUI.py" />
         <option value="$PROJECT_DIR$/JupyterNotebookFile/Yelp x Python.ipynb" />
-        <option value="$PROJECT_DIR$/Reference_Page.md" />
         <option value="$PROJECT_DIR$/testFile.py" />
         <option value="$PROJECT_DIR$/Yelp_Dataset_License/PandasModel.py" />
         <option value="$PROJECT_DIR$/fileParser.py" />
@@ -201,6 +192,7 @@
         <option value="$PROJECT_DIR$/recommendationSystem.py" />
         <option value="$PROJECT_DIR$/mastergui.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Reference_Page.md" />
       </list>
     </option>
   </component>
@@ -447,8 +439,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298153" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3298153" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298153" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28100264" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.17008798" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28100264" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.17008798" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
@@ -674,16 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Reference_Page.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="990">
-            <caret line="66" selection-start-line="66" selection-end-line="66" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testFile.py" />
     <entry file="file://$PROJECT_DIR$/Yelp_Dataset_License/PandasModel.py" />
     <entry file="file://$PROJECT_DIR$/fileParser.py">
@@ -730,6 +712,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mastergui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -746,10 +735,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+    <entry file="file://$PROJECT_DIR$/Reference_Page.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="230">
+            <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
