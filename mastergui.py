@@ -4,6 +4,9 @@ from PyQt5.QtGui import *
 from PyQt5.QtSql import *
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QMessageBox
 
+from PyQt5 import QtWebEngine, QtWebEngineWidgets
+from PyQt5.QtWebEngineWidgets import QWebEngineView, QWebEnginePage, QWebEngineSettings
+
 import pandas as pd
 import numpy as np
 
@@ -22,34 +25,6 @@ userValidReviewCount = 0
 businessReviewCountValid = 0
 businessReviewCountAll = 0
 userIDtorecom = ''
-
-
-#############################################
-# class PandasModel(QtCore.QAbstractTableModel):
-#     """
-#     Class to populate a table view with a pandas dataframe
-#     """
-#
-#     def __init__(self, data, parent=None):
-#         QtCore.QAbstractTableModel.__init__(self, parent)
-#         self._data = data
-#
-#     def rowCount(self, parent=None):
-#         return len(self._data.values)
-#
-#     def columnCount(self, parent=None):
-#         return self._data.columns.size
-#
-#     def data(self, index, role=QtCore.Qt.DisplayRole):
-#         if index.isValid():
-#             if role == QtCore.Qt.DisplayRole:
-#                 return str(self._data.values[index.row()][index.column()])
-#         return None
-#
-#     def headerData(self, col, orientation, role):
-#         if orientation == QtCore.Qt.Horizontal and role == QtCore.Qt.DisplayRole:
-#             return self._data.columns[col]
-#         return None
 
 
 class Ui_MasterGUI(object):
@@ -175,6 +150,18 @@ class Ui_MasterGUI(object):
         self.lineEdit_businessInput = QtWidgets.QLineEdit(self.tab_Business)
         self.lineEdit_businessInput.setObjectName("lineEdit_businessInput")
         self.gridLayout_Business.addWidget(self.lineEdit_businessInput, 0, 0, 1, 1)
+        ##############################
+        # self.listView_test = QtWidgets.QListView(self.tab_Business)
+        # self.listView_test.setObjectName("listView_test")
+        # self.gridLayout_Business.addWidget(self.listView_test, 3, 0, 1, 2)
+
+        self.webview = QtWebEngineWidgets.QWebEngineView(self.tab_Business)
+        self.webview.setObjectName("webview")
+        # # print(self.url)
+        self.webview.load(QtCore.QUrl("file:///Users/XG/.venv/YelpxPython/map.html"))
+        self.gridLayout_Business.addWidget(self.webview, 3, 0, 1, 2)
+
+        ##############################
         self.label = QtWidgets.QLabel(self.tab_Business)
         font = QtGui.QFont()
         font.setFamily("Helvetica Neue")
@@ -243,7 +230,6 @@ class Ui_MasterGUI(object):
 
         self.retranslateUi(MasterGUI)
         self.overallTabs.setCurrentIndex(0)
-        # self.pb_DBserver.clicked.connect(MasterGUI.close)
 
         #############################################
         ## Signal and Slots
@@ -430,7 +416,6 @@ class Ui_MasterGUI(object):
 
         pd_model = PandasModel(business.loc[recommended_business_names][:20])
         self.tableView_Recomm.setModel(pd_model)
-
 
 
 if __name__ == "__main__":
