@@ -417,6 +417,16 @@ class Ui_MasterGUI(object):
         pd_model = PandasModel(business.loc[recommended_business_names][:20])
         self.tableView_Recomm.setModel(pd_model)
 
+    def modifyCoordinate(self):
+        with open('/Users/XG/.venv/YelpxPython/map.html', 'r') as file:
+            filedata = file.read()
+
+        filedata = filedata.replace('lati', 'lati2')
+        filedata = filedata.replace('long', 'long2')
+
+        with open('/Users/XG/.venv/YelpxPython/map.html', 'w') as file:
+            file.write(filedata)
+
 
 if __name__ == "__main__":
     import sys
