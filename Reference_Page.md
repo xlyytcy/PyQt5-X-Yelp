@@ -67,7 +67,8 @@ Related Interesting Research
 - https://github.com/abulhawa/yelp-recommender-system
 - https://nycdatascience.com/blog/student-works/capstone/yelper-collaborative-filtering-based-recommendation-system/
 
-
+Python
+- https://www.csee.umbc.edu/courses/331/fall11/notes/python/python3.ppt.pdf
 
 
 
