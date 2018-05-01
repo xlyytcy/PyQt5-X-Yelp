@@ -62,6 +62,7 @@ class Ui_MasterGUI(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.tableView_User.sizePolicy().hasHeightForWidth())
         self.tableView_User.setSizePolicy(sizePolicy)
+        #self.tableView_User.setMaximumHeight(400)
         self.tableView_User.setObjectName("tableView_User")
         self.gridLayout_3.addWidget(self.tableView_User, 1, 1, 1, 1)
         self.gridLayout_User = QtWidgets.QGridLayout()
@@ -130,6 +131,7 @@ class Ui_MasterGUI(object):
         sizePolicy.setHeightForWidth(self.tableView_UserAllReviews.sizePolicy().hasHeightForWidth())
         self.tableView_UserAllReviews.setSizePolicy(sizePolicy)
         self.tableView_UserAllReviews.setObjectName("tableView_UserAllReviews")
+        #self.tableView_UserAllReviews.setMaximumHeight(40)
         self.gridLayout_4.addWidget(self.tableView_UserAllReviews, 0, 0, 2, 1)
         self.gridLayout_3.addLayout(self.gridLayout_4, 2, 1, 1, 1)
         self.overallTabs.addTab(self.tab_User, "")
@@ -155,15 +157,11 @@ class Ui_MasterGUI(object):
         self.lineEdit_businessInput.setObjectName("lineEdit_businessInput")
         self.gridLayout_Business.addWidget(self.lineEdit_businessInput, 0, 0, 1, 1)
         ##############################
-        # self.listView_test = QtWidgets.QListView(self.tab_Business)
-        # self.listView_test.setObjectName("listView_test")
-        # self.gridLayout_Business.addWidget(self.listView_test, 3, 0, 1, 2)
-
-        self.webview = QtWebEngineWidgets.QWebEngineView(self.tab_Business)
-        self.webview.setObjectName("webview")
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding,
-                                           QtWidgets.QSizePolicy.MinimumExpanding)
-        self.webview.setSizePolicy(sizePolicy)
+        # self.webview = QtWebEngineWidgets.QWebEngineView(self.tab_Business)
+        # self.webview.setObjectName("webview")
+        # sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding,
+        #                                    QtWidgets.QSizePolicy.MinimumExpanding)
+        # self.webview.setSizePolicy(sizePolicy)
         # self.webview.load(QtCore.QUrl("file:///Users/XG/.venv/YelpxPython/map.html"))
         # self.gridLayout_Business.addWidget(self.webview, 3, 0, 1, 2)
 
@@ -253,7 +251,7 @@ class Ui_MasterGUI(object):
     def retranslateUi(self, MasterGUI):
         _translate = QtCore.QCoreApplication.translate
         MasterGUI.setWindowTitle(_translate("MasterGUI", "MasterGUI"))
-        self.pb_DBserver.setText(_translate("MasterGUI", "DB Server Usr/PW"))
+        self.pb_DBserver.setText(_translate("MasterGUI", "Connect to DB"))
         self.pb_searchUser.setText(_translate("MasterGUI", "Search"))
         self.label_User.setText(_translate("MasterGUI",
                                            "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">User Search</span></p></body></html>"))
@@ -324,7 +322,6 @@ class Ui_MasterGUI(object):
             QMessageBox.about(MasterGUI, "User Search Result Error", "No such user.")
 
     def displayUsersAllReviews(self):
-
         userReviewTableView = self.tableView_UserAllReviews
         userIDtoSearch = str(self.lineEdit_User.text())  # assure this is a string instead of QString
 
@@ -356,7 +353,6 @@ class Ui_MasterGUI(object):
             QMessageBox.about(MasterGUI, "User Search Result Error", "No such user.")
 
     def displayBusinessAllReviews(self):
-
         businessTableView = self.tableView_Business
         businessIDtoSearch = str(self.lineEdit_businessInput.text())  # assure this is a string instead of QString
 
@@ -385,8 +381,8 @@ class Ui_MasterGUI(object):
         if queryGetCoord.next():
             lati = float(queryGetCoord.value(0))
             longi = float(queryGetCoord.value(1))
-        print(longi)
-        print(lati)
+        # print(longi)
+        # print(lati)
         ##########
 
         # QSqlQueryModel
@@ -408,7 +404,7 @@ class Ui_MasterGUI(object):
 
         global businessReviewCountValid
         businessReviewCountValid = tablemodel.rowCount()
-        print(userAllReviewCount)
+        # print(userAllReviewCount)
         ##############################
 
         businessTableView.show()
@@ -416,14 +412,12 @@ class Ui_MasterGUI(object):
         self.modifyCoordinate()
 
     def calculateUserFakePercent(self):
-
         if userValidReviewCount is not None and userAllReviewCount is not None:
             self.label_fakePercentageVar.setText(str((1 - userAllReviewCount / userValidReviewCount) * 100))
         else:
             QMessageBox.about(MasterGUI, "No Entries ", "Search another user.")
 
     def calculateBusinessFakePercent(self):
-
         # print(businessReviewCountAll)
         # print(businessReviewCountValid)
         if businessReviewCountAll is not None and businessReviewCountValid is not None:
@@ -441,18 +435,15 @@ class Ui_MasterGUI(object):
         self.tableView_Recomm.setModel(pd_model)
 
     def modifyCoordinate(self):
-        with open('/Users/XG/.venv/YelpxPython/map.html', 'r') as file:
-            filedata = file.read()
-
-        filedata = filedata.replace('lati', str(lati))
-        filedata = filedata.replace('long', str(longi))
-
-        with open('/Users/XG/.venv/YelpxPython/map.html', 'w') as file:
-            file.write(filedata)
-
         replace('lati', lati)
         replace('longi', longi)
         #########
+        self.webview = QtWebEngineWidgets.QWebEngineView(self.tab_Business)
+        self.webview.setObjectName("webview")
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding,
+                                           QtWidgets.QSizePolicy.MinimumExpanding)
+        self.webview.setSizePolicy(sizePolicy)
+        self.webview.setMaximumHeight(200)
         self.webview.load(QtCore.QUrl("file:///Users/XG/.venv/YelpxPython/map.html"))
         self.gridLayout_Business.addWidget(self.webview, 3, 0, 1, 2)
         #########
