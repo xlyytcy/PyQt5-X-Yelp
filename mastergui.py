@@ -13,6 +13,8 @@ import numpy as np
 from recommendationSystem import *
 from PandasModel import *
 
+from replaceLatLong import replace
+
 #############################################
 # Global Variable
 db = QSqlDatabase.addDatabase('QMYSQL')
@@ -25,6 +27,8 @@ userValidReviewCount = 0
 businessReviewCountValid = 0
 businessReviewCountAll = 0
 userIDtorecom = ''
+lati = 0.0
+longi = 0.0
 
 
 class Ui_MasterGUI(object):
@@ -157,9 +161,11 @@ class Ui_MasterGUI(object):
 
         self.webview = QtWebEngineWidgets.QWebEngineView(self.tab_Business)
         self.webview.setObjectName("webview")
-        # # print(self.url)
-        self.webview.load(QtCore.QUrl("file:///Users/XG/.venv/YelpxPython/map.html"))
-        self.gridLayout_Business.addWidget(self.webview, 3, 0, 1, 2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding,
+                                           QtWidgets.QSizePolicy.MinimumExpanding)
+        self.webview.setSizePolicy(sizePolicy)
+        # self.webview.load(QtCore.QUrl("file:///Users/XG/.venv/YelpxPython/map.html"))
+        # self.gridLayout_Business.addWidget(self.webview, 3, 0, 1, 2)
 
         ##############################
         self.label = QtWidgets.QLabel(self.tab_Business)
@@ -367,6 +373,22 @@ class Ui_MasterGUI(object):
         queryCountAll.bindValue(":businessIDtoSearch", businessIDtoSearch)
         queryCountAll.exec_()
 
+        ########## Latitude and longitude
+        queryGetCoord = QSqlQuery()
+        queryGetCoord.prepare(
+            " SELECT latitude, longitude FROM business WHERE id LIKE :businessIDtoSearch")
+        queryGetCoord.bindValue(":businessIDtoSearch", businessIDtoSearch)
+        queryGetCoord.exec_()
+
+        global longi
+        global lati
+        if queryGetCoord.next():
+            lati = float(queryGetCoord.value(0))
+            longi = float(queryGetCoord.value(1))
+        print(longi)
+        print(lati)
+        ##########
+
         # QSqlQueryModel
         tablemodel = QSqlQueryModel()
         tablemodel.setQuery(queryUser)
@@ -386,11 +408,12 @@ class Ui_MasterGUI(object):
 
         global businessReviewCountValid
         businessReviewCountValid = tablemodel.rowCount()
-        # print(userAllReviewCount)
+        print(userAllReviewCount)
         ##############################
 
         businessTableView.show()
         self.calculateBusinessFakePercent()
+        self.modifyCoordinate()
 
     def calculateUserFakePercent(self):
 
@@ -421,11 +444,18 @@ class Ui_MasterGUI(object):
         with open('/Users/XG/.venv/YelpxPython/map.html', 'r') as file:
             filedata = file.read()
 
-        filedata = filedata.replace('lati', 'lati2')
-        filedata = filedata.replace('long', 'long2')
+        filedata = filedata.replace('lati', str(lati))
+        filedata = filedata.replace('long', str(longi))
 
         with open('/Users/XG/.venv/YelpxPython/map.html', 'w') as file:
             file.write(filedata)
+
+        replace('lati', lati)
+        replace('longi', longi)
+        #########
+        self.webview.load(QtCore.QUrl("file:///Users/XG/.venv/YelpxPython/map.html"))
+        self.gridLayout_Business.addWidget(self.webview, 3, 0, 1, 2)
+        #########
 
 
 if __name__ == "__main__":
